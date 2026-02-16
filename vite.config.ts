@@ -3,7 +3,6 @@ import path from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-	base: '/',
 	plugins: [react()],
 	resolve: {
 		alias: {
@@ -13,8 +12,5 @@ export default defineConfig({
 	server: {
 		port: Number(process.env.VITE_PORT) || 3000,
 		host: true,
-		watch: {
-			usePolling: true
-		}
 	}
 })
