@@ -25,7 +25,6 @@ module.exports = {
 		'no-duplicate-selectors': true,
 		'no-descending-specificity': true,
 		'selector-no-qualifying-type': true,
-		'selector-max-id': 0,
 		'selector-max-class': 4,
 		'max-nesting-depth': 4,
 
@@ -35,9 +34,10 @@ module.exports = {
 
 		// SCSS
 		'scss/at-rule-no-unknown': true,
-		'scss/at-mixin-pattern': '^[_a-z]+$',
-		'scss/at-function-pattern': '^[_a-z]+$',
-		'scss/dollar-variable-pattern': '^[_a-z]+$',
+		'scss/at-mixin-pattern': '^[-a-z]+$',
+		'scss/at-function-pattern': '^[-a-z]+$',
+		'scss/dollar-variable-pattern': '^[-a-z]+$',
+		'scss/dollar-variable-empty-line-before': null,
 		'scss/no-duplicate-dollar-variables': true,
 		'scss/no-global-function-names': true,
 		'scss/selector-no-redundant-nesting-selector': true
