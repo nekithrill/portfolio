@@ -1,5 +1,4 @@
 import { MainLayout } from '@/app/layouts/MainLayout'
-import { RootProvider } from '@/app/providers/RootProvider'
 import '@/app/styles/main.scss'
 import { AboutPage } from '@/pages/about/AboutPage'
 import { ContactsPage } from '@/pages/contacts/ContactsPage'
@@ -21,18 +20,16 @@ export default function App() {
 				speed={2.5}
 			/>
 
-			<RootProvider>
-				<Routes>
-					<Route path='/' element={<MainLayout />}>
-						<Route index element={<HomePage />} />
-						<Route path='about' element={<AboutPage />} />
-						<Route path='skills' element={<SkillsPage />} />
-						<Route path='projects' element={<ProjectsPage />} />
-						<Route path='contacts' element={<ContactsPage />} />
-						<Route path='privacy' element={<PrivacyPage />} />
-					</Route>
-				</Routes>
-			</RootProvider>
+			<Routes>
+				<Route path='/' element={<MainLayout />}>
+					<Route index element={<HomePage />} />
+					<Route path='about' element={<AboutPage />} />
+					<Route path='skills' element={<SkillsPage />} />
+					<Route path='projects' element={<ProjectsPage />} />
+					<Route path='contacts' element={<ContactsPage />} />
+					<Route path='privacy' element={<PrivacyPage />} />
+				</Route>
+			</Routes>
 		</>
 	)
 }
