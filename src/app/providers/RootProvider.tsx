@@ -1,18 +1,15 @@
+import { LanguageProvider } from '@/app/providers/language'
+import { ThemeProvider } from '@/app/providers/theme'
 import { ReactNode } from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import { LanguageProvider } from './language/LanguageProvider'
-import { ThemeProvider } from './theme/ThemeProvider'
 
-interface RootProvider {
+interface RootProviderProps {
 	children: ReactNode
 }
 
-export const RootProvider = ({ children }: RootProvider) => {
+export const RootProvider = ({ children }: RootProviderProps) => {
 	return (
-		<BrowserRouter>
-			<ThemeProvider>
-				<LanguageProvider>{children}</LanguageProvider>
-			</ThemeProvider>
-		</BrowserRouter>
+		<LanguageProvider>
+			<ThemeProvider>{children}</ThemeProvider>
+		</LanguageProvider>
 	)
 }
