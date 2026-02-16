@@ -1,0 +1,49 @@
+$theme-schema: (
+	text: (
+		_: (),
+		accent: (),
+		secondary: ()
+	),
+	selection: (
+		bg: (),
+		text: ()
+	),
+	scrollbar: (
+		track: (),
+		thumb: ()
+	),
+	grid: (
+		bg: (),
+		line: ()
+	),
+	window: (
+		bg: ()
+	),
+	sidebar: (
+		bg: ()
+	),
+	section: (
+		bg: (),
+		header: (
+			bg: ()
+		),
+		footer: (
+			bg: (),
+			text: ()
+		)
+	),
+	nav: (),
+	button: (
+		bg: (),
+		text: ()
+	),
+	card: (
+		bg: (),
+		text: ()
+	),
+	clock: (),
+	switch: (),
+	chip: (
+		bg: ()
+	)
+);

@@ -1,96 +1,83 @@
-:root.light-theme {
-	// --- Colors palette ---
-	--clr-h: 40;
-	--clr-s: 70%;
-	--clr-l: 50%;
-
-	--clr-accent: hsl(var(--clr-h) var(--clr-s) var(--clr-l));
-	--clr-accent-hover: hsl(var(--clr-h) var(--clr-s) 40%);
-	--clr-accent-active: hsl(var(--clr-h) var(--clr-s) 30%);
-
-	--clr-primary: hsl(var(--clr-h) 40% 80%);
-	--clr-secondary: hsl(var(--clr-h) 20% 30%);
-	--clr-neutral: hsl(var(--clr-h) 0% 95%);
-	--clr-primary-transparent: hsl(var(--clr-h) 40% 80% / 50%);
-	--clr-secondary-transparent: hsl(var(--clr-h) 20% 40% / 50%);
-	--clr-neutral-transparent: hsl(var(--clr-h) 10% 40% / 50%);
-
-	// --- General ---
-	// --border-width: 0.3rem;
-	// --border-color: var(--clr-secondary);
-	--clr-grid-line: var(--clr-accent);
-	--clr-grid-bg: hsl(var(--clr-h) 0% 100%);
-
-	// --- Shadow ---
-	--clr-shadow-inner: ;
-	--clr-shadow-outer: ;
-	--inner-box-shadow: inset 0 0 3rem var(--clr-shadow-inner);
-	--outer-box-shadow: 0 0 3rem var(--clr-shadow-outer);
-
-	// --- Scrollbar ---
-	--clr-scrollbar-thumb: var(--clr-accent);
-	--clr-scrollbar-thumb-hover: var(--clr-accent-hover);
-	--clr-scrollbar-track: var(--clr-secondary-transparent);
-
-	// --- Selection ---
-	--clr-selection-bg: white;
-	--clr-selection-text: black;
-
-	// --- Text ---
-	--clr-text: var(--clr-secondary);
-	--clr-text-sidebar: var(--clr-neutral);
-	--clr-text-secondary: hsl(var(--clr-h) 0% 80%);
-
-	// --- Window / Panels ---
-	--clr-window-bg: var(--clr-neutral-transparent);
-	--clr-sidebar-bg: var(--clr-secondary-transparent);
-	--clr-section-bg: var(--clr-primary);
-	--clr-section-header-bg: var(--clr-secondary);
-	--clr-section-footer-bg: var(--clr-secondary);
-	--clr-section-footer-text: var(--clr-text-secondary);
-	--clr-chip-bg: var(--clr-neutral);
-
-	// --- Button ---
-	--clr-button-text: var(--clr-secondary);
-	--clr-button-text-hover: var(--clr-neutral);
-	--clr-button-bg: var(--clr-neutral);
-	--clr-button-bg-hover: var(--clr-accent-hover);
-
-	// --- Card ---
-	--clr-card-title: var(--clr-primary);
-	--clr-card-subtitle: var(--clr-primary);
-	--clr-card-text: var(--clr-secondary);
-	--clr-card-bg: var(--clr-neutral);
-	--clr-card-footer: var(--clr-neutral);
-	--clr-card-education-title: var(--clr-accent);
-	--clr-card-education-text: var(--clr-secondary);
-	--clr-card-education-text-ghost: rgb(187, 187, 187);
-	--clr-card-education-bg: var(--clr-neutral);
-	--clr-card-project-title: var(--clr-accent);
-	--clr-card-project-subtitle: var(--clr-text-secondary);
-	--clr-card-project-text: var(--clr-text);
-	--clr-card-project-bg: var(--clr-neutral);
-	--clr-card-project-footer: violet;
-
-	// --- Clock ---
-	--clr-clock-time: var(--clr-accent);
-	--clr-clock-time-bg: var(--clr-accent-active);
-	--clr-clock-date: var(--clr-text-sidebar);
-	--clr-clock-date-bg: var(--clr-secondary);
-
-	// --- Switcher ---
-	--clr-switcher-bg: var(--clr-secondary);
-	--clr-switcher-bg-hover: var(--clr-accent-hover);
-	--clr-switcher-bg-active: var(--clr-accent-active);
-	--clr-switcher-text: var(--clr-text-sidebar);
-	--clr-switcher-text-hover: var(--clr-text-sidebar);
-	--clr-switcher-text-active: var(--clr-accent);
-
-	// --- Navigation ---
-	--clr-nav-bg: var(--clr-secondary);
-	--clr-nav-bg-hover: var(--clr-accent-hover);
-	--clr-nav-bg-active: var(--clr-accent-active);
-	--clr-nav-text: var(--clr-text-sidebar);
-	--clr-nav-text-hover: var(--clr-text-sidebar);
-	--clr-nav-text-active: var(--clr-accent);
-}
+$light-theme: (
+	text: (
+		_: #1a1a1a,
+		accent: #8e24aa,
+		secondary: #555555
+	),
+	selection: (
+		bg: #c5cae9,
+		text: #1a1a1a
+	),
+	scrollbar: (
+		track: #e0e0e0,
+		thumb: (
+			_: #b0b0b0,
+			hover: #909090
+		)
+	),
+	grid: (
+		bg: #f0f0f0,
+		line: #d0d0d0
+	),
+	window: (
+		bg: #ffffff
+	),
+	sidebar: (
+		bg: #f5f5f5
+	),
+	nav: (
+		bg: (
+			_: #d1c4e9,
+			hover: #b39ddb,
+			active: #9575cd
+		),
+		text: (
+			_: #1a1a1a,
+			hover: #333333,
+			active: #000000
+		)
+	),
+	section: (
+		bg: #f5f5f5,
+		header: (
+			bg: #e0e0e0
+		),
+		footer: (
+			bg: #eeeeee,
+			text: #1a1a1a
+		)
+	),
+	button: (
+		bg: #7986cb,
+		text: #ffffff
+	),
+	card: (
+		bg: #ffffff,
+		text: #333333
+	),
+	clock: (
+		time: (
+			bg: #e3f2fd,
+			text: #0d47a1
+		),
+		date: (
+			bg: #fff8e1,
+			text: #6d4c41
+		)
+	),
+	switch: (
+		bg: (
+			_: #ce93d8,
+			hover: #ba68c8,
+			active: #ab47bc
+		),
+		text: (
+			_: #1a237e,
+			hover: #283593,
+			active: #0d47a1
+		)
+	),
+	chip: (
+		bg: #e0e0e0
+	)
+);

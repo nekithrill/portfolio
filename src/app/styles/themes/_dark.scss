@@ -1,74 +1,83 @@
-:root.dark-theme {
-	// --- Colors palette ---
-	--clr-h: 40;
-	--clr-s: 100%;
-	--clr-l: 50%;
-
-	--clr-accent: hsl(var(--clr-h) var(--clr-s) var(--clr-l));
-	--clr-accent-hover: hsl(var(--clr-h) var(--clr-s) 40%);
-	--clr-accent-active: hsl(var(--clr-h) var(--clr-s) 30%);
-
-	--clr-primary: hsl(var(--clr-h) 40% 80%);
-	--clr-secondary: hsl(var(--clr-h) 20% 30%);
-	--clr-neutral: hsl(var(--clr-h) 0% 20%);
-	--clr-primary-transparent: hsl(var(--clr-h) 40% 80% / 50%);
-	--clr-secondary-transparent: hsl(var(--clr-h) 20% 30% / 50%);
-	--clr-neutral-transparent: hsl(var(--clr-h) 10% 50% / 70%);
-
-	// --- General ---
-	// --border-width: 0.3rem;
-	// --border-color: var(--clr-secondary);
-	--clr-grid-line: var(--clr-accent);
-	--clr-grid-bg: hsl(var(--clr-h) 0% 20%);
-
-	// --- Shadow ---
-	--clr-shadow-inner: ;
-	--clr-shadow-outer: ;
-	--inner-box-shadow: inset 0 0 3rem var(--clr-shadow-inner);
-	--outer-box-shadow: 0 0 3rem var(--clr-shadow-outer);
-
-	// --- Scrollbar ---
-	--clr-scrollbar-thumb: var(--clr-accent);
-	--clr-scrollbar-thumb-hover: var(--clr-neutral);
-	--clr-scrollbar-track: var(--clr-primary);
-
-	// --- Selection ---
-	--clr-selection-bg: white;
-	--clr-selection-text: black;
-
-	// --- Text ---
-	--clr-text: var(--clr-secondary);
-	--clr-text-sidebar: var(--clr-neutral);
-	--clr-text-secondary: hsl(var(--clr-h) 0% 80%);
-
-	// --- Window / Panels ---
-	--clr-window-bg: var(--clr-neutral-transparent);
-	--clr-sidebar-bg: var(--clr-primary-transparent);
-	--clr-section-bg: var(--clr-primary);
-	--clr-section-header-bg: var(--clr-secondary);
-	--clr-section-footer-bg: var(--clr-secondary);
-	--clr-section-footer-text: var(--clr-text-secondary);
-	--clr-chip-bg: var(--clr-text-sidebar);
-
-	// --- Clock ---
-	--clr-clock-time: var(--clr-accent);
-	--clr-clock-time-bg: var(--clr-accent-active);
-	--clr-clock-date: var(--clr-text-sidebar);
-	--clr-clock-date-bg: var(--clr-secondary);
-
-	// --- Switcher ---
-	--clr-switcher-bg: var(--clr-secondary);
-	--clr-switcher-bg-hover: var(--clr-accent-hover);
-	--clr-switcher-bg-active: var(--clr-accent-active);
-	--clr-switcher-text: var(--clr-text-sidebar);
-	--clr-switcher-text-hover: var(--clr-text-sidebar);
-	--clr-switcher-text-active: var(--clr-accent);
-
-	// --- Navigation ---
-	--clr-nav-bg: var(--clr-secondary);
-	--clr-nav-bg-hover: var(--clr-accent-hover);
-	--clr-nav-bg-active: var(--clr-accent-active);
-	--clr-nav-text: var(--clr-text-sidebar);
-	--clr-nav-text-hover: var(--clr-text-sidebar);
-	--clr-nav-text-active: var(--clr-accent);
-}
+$dark-theme: (
+	text: (
+		_: #e0e0e0,
+		accent: #cda0ff,
+		secondary: #b0a0c0
+	),
+	selection: (
+		bg: #3a5f9e,
+		text: #e0e0e0
+	),
+	scrollbar: (
+		track: #2b2b2b,
+		thumb: (
+			_: #6b6b6b,
+			hover: #8b8b8b
+		)
+	),
+	grid: (
+		bg: #1f2f3f,
+		line: #2e3c4f
+	),
+	window: (
+		bg: #121212
+	),
+	sidebar: (
+		bg: #1c1c1c
+	),
+	nav: (
+		bg: (
+			_: #455a64,
+			hover: #5c6b73,
+			active: #6c7b85
+		),
+		text: (
+			_: #cfd8dc,
+			hover: #eceff1,
+			active: #ffffff
+		)
+	),
+	section: (
+		bg: #1f2f3f,
+		header: (
+			bg: #2a3a4f
+		),
+		footer: (
+			bg: #2f3f50,
+			text: #cfd8dc
+		)
+	),
+	button: (
+		bg: #3f51b5,
+		text: #ffffff
+	),
+	card: (
+		bg: #263238,
+		text: #eceff1
+	),
+	clock: (
+		time: (
+			bg: #37474f,
+			text: #cfd8dc
+		),
+		date: (
+			bg: #455a64,
+			text: #e0e0e0
+		)
+	),
+	switch: (
+		bg: (
+			_: #546e7a,
+			hover: #607d8b,
+			active: #455a64
+		),
+		text: (
+			_: #b0bec5,
+			hover: #cfd8dc,
+			active: #ffffff
+		)
+	),
+	chip: (
+		bg: #37474f
+	)
+);
