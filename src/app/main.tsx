@@ -1,12 +1,18 @@
 import App from '@/app/App'
+import { RootProvider } from '@/app/providers/RootProvider'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 
-const root = document.getElementById('root')
-if (!root) throw new Error('No root element found')
+const container = document.getElementById('root')
+if (!container) throw new Error('Root container missing in index.html')
 
-createRoot(root).render(
+createRoot(container).render(
 	<React.StrictMode>
-		<App />
+		<BrowserRouter>
+			<RootProvider>
+				<App />
+			</RootProvider>
+		</BrowserRouter>
 	</React.StrictMode>
 )
