@@ -8,7 +8,7 @@ export const LANGUAGES = {
 
 export type Language = (typeof LANGUAGES)[keyof typeof LANGUAGES]['value']
 
-export interface UseLanguageSwitchResult {
-	selectedLanguage: Language
-	changeLanguage: (language: Language) => void
+export interface LanguageSwitchResult {
+	language: Language
+	setLanguage: (lang: Language) => void
 }
