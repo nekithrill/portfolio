@@ -1,0 +1,95 @@
+{
+	"menu": {
+		"home": "01 ━ Home",
+		"about": "02 ━ About",
+		"skills": "03 ━ Skills",
+		"projects": "04 ━ Projects",
+		"blog": "05 ━ Blog",
+		"contacts": "06 ━ Contacts",
+		"privacy": "Privacy & Policy"
+	},
+	"auth": {
+		"login": "Login",
+		"logout": "Logout",
+		"register": "Register",
+		"profile": "Profile"
+	},
+	"section": {
+		"home": {
+			"title": "Welcome to my page!",
+			"text": "👋 Hello there! Welcome to my personal corner of the web, where you can find everything you need to know about me. Use the navigation to explore each section and learn more. For a smoother experience, I’ve added language and theme switching, along with helpful tooltips for less obvious details.",
+			"featuresTitle": "Features",
+			"featuresText": "Lorem4ik"
+		},
+		"about": {
+			"title": "About me",
+			"text": {
+				"frontend": "My name is Mykyta, i'm Web Developer from Ukraine focused on creating interactive and efficient user interfaces with React and TypeScript. I’m passionate about building web applications that are both functional and user-friendly.",
+				"backend": "While frontend is my main focus, I’m also curious about backend technologies to better understand how web applications work as a whole and to build more robust, maintainable solutions.",
+				"learn": "I’m always learning new technologies, tackling challenges, and experimenting with tools to make applications faster, cleaner, and more intuitive."
+			},
+			"education": {
+				"title": "Education",
+				"selfEducation": "Independent learning",
+				"firstPlace": "College of Economics and Law of Zaporizhzhia National University",
+				"secondPlace": "Zaporizhzhia National University",
+				"specialty": "Software Engineering",
+				"specialist": "Junior Specialist",
+				"bachelor": "Bachelor"
+			}
+		},
+		"skills": {
+			"title": "Skills",
+			"hard": {
+				"title": "Hard skills",
+				"programmingLanguages": "Programming Languages",
+				"frontend": "Frontend",
+				"backend": "Backend",
+				"other": "Tools",
+				"level": {
+					"note": "❕ Skills are rated subjectively and may differ from others’ opinion.",
+					"beginner": "Beginner ─ basic understanding of concepts and syntax, completing simple tasks with guidance.",
+					"intermediate": "Intermediate ─ confident use of the technology to solve common tasks, understanding key tools and patterns.",
+					"advanced": "Advanced ─ deep understanding of the technology, solving complex problems, optimizing code, and applying best practices.",
+					"expert": "Expert ─ full mastery of the technology, designing project architecture, developing own approaches, and mentoring others."
+				}
+			},
+			"soft": {
+				"title": "Soft skills",
+				"communication": "Communicability",
+				"problemSolving": "Problem solving",
+				"adaptability": "Adaptability",
+				"creativity": "Creativity",
+				"enthusiasm": "Enthusiasm"
+			},
+			"principles": "Principles",
+			"languages": {
+				"title": "Languages",
+				"english": "English",
+				"ukrainian": "Ukrainian",
+				"russian": "Russian",
+				"native": "Native",
+				"fluent": "Fluent"
+			}
+		},
+		"projects": {
+			"title": "Projects",
+			"text": "Text"
+		},
+		"contacts": {
+			"title": "Contacts",
+			"text": "If you have any questions, suggestions, or feedback, I'd love to hear from you! You can contact me using social media buttons below. Don't be shy, I always respond to messages promptly and try to get in touch as quickly as possible."
+		},
+		"privacy": {
+			"title": "Information",
+			"privacyTitle": "Privacy",
+			"sourcesTitle": "Sources",
+
+			"intro": "Additional information about project",
+			"privacyText": "Privacy text ...",
+			"sourcesText": "All used assets are distributed under free licenses and are available for non-commercial and commercial use.",
+			"icons": "Icons -> Chunk 16px Thick Interface Icons Collection",
+			"fonts": "Fonts -> JetBrains Mono + Tektur"
+		}
+	}
+}
