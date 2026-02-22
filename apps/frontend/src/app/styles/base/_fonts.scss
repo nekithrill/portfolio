@@ -1,0 +1,17 @@
+@font-face {
+	font-family: JetBrains;
+	src: url('/src/shared/assets/fonts/JetBrainsMono-VariableFont.woff2')
+		format('woff2-variations');
+	font-weight: 300 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Tektur;
+	src: url('/src/shared/assets/fonts/Tektur-VariableFont.woff2')
+		format('woff2-variations');
+	font-weight: 400 900;
+	font-style: normal;
+	font-display: swap;
+}
