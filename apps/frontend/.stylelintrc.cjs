@@ -25,8 +25,8 @@ module.exports = {
 		'no-duplicate-selectors': true,
 		'no-descending-specificity': true,
 		'selector-no-qualifying-type': true,
-		'selector-max-class': 4,
-		'max-nesting-depth': 4,
+		'selector-max-class': 3,
+		'max-nesting-depth': 3,
 
 		// Vendor Prefixes
 		'property-no-vendor-prefix': true,
