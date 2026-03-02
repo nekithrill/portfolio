@@ -10,6 +10,7 @@
 
 	color: var(--clr-text);
 	accent-color: var(--clr-text-accent);
+	background-color: var(--clr-bg);
 
 	overflow: hidden;
 
@@ -20,22 +21,9 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		gap: 1rem;
 
 		backdrop-filter: blur(0.5rem);
-		background-color: var(--clr-window-bg);
-		color: var(--clr-window-text);
-	}
-
-	&__content {
-		width: 100%;
-		height: 100%;
-		padding: 3rem;
-		min-height: 0;
-
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-
-		overflow-y: auto;
+		color: var(--clr-text);
 	}
 }
