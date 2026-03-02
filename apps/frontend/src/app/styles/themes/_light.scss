@@ -1,98 +1,32 @@
-$light-theme: (
-	// General
-	text: (
-			_: #1a1a1a,
-			accent: #8e24aa,
-			secondary: #555555
-		),
-	selection: (
-		bg: #c5cae9,
-		text: #1a1a1a
-	),
-	scrollbar: (
-		track: #e0e0e0,
-		thumb: (
-			_: #b0b0b0,
-			hover: #909090
-		)
-	),
-	grid: (
-		bg: #f0f0f0,
-		line: #d0d0d0
-	),
+:root {
+	--clr-text: var(--clr-neutral-900);
+	--clr-text-accent: var(--clr-primary-500);
+	--clr-text-hover: var(--clr-neutral-500);
 
-	// Layout
-	window: (
-			bg: #ffffff
-		),
-	sidebar: (
-		bg: #f5f5f5,
-		border: grey
-	),
-	nav: (
-		bg: (
-			_: #d1c4e9,
-			hover: #b39ddb,
-			active: #9575cd
-		),
-		text: (
-			_: #1a1a1a,
-			hover: #333333,
-			active: #000000
-		)
-	),
-	footer: (
-		text: (
-			_: #c5c5c5,
-			hover: white
-		)
-	),
-	section: (
-		bg: #f5f5f5,
-		header: (
-			bg: #e0e0e0
-		),
-		footer: (
-			bg: #eeeeee,
-			text: #1a1a1a
-		)
-	),
+	--clr-bg: var(--clr-neutral-200);
 
-	// UI elements
-	button: (
-			text: (
-				_: #c5c5c5,
-				hover: white,
-				accent: orange
-			)
-		),
-	card: (
-		bg: #ffffff,
-		text: #333333
-	),
-	clock: (
-		time: (
-			bg: #e3f2fd,
-			text: #0d47a1
-		),
-		date: (
-			bg: #fff8e1,
-			text: #6d4c41
-		)
-	),
-	switch: (
-		bg: (
-			_: #ce93d8,
-			hover: #ba68c8,
-			active: #ab47bc
-		),
-		text: (
-			_: #1a237e,
-			hover: #283593,
-			active: #0d47a1
-		)
-	),
-	chip: (
-		bg: #e0e0e0
-	)
-);
+	--clr-selection-bg: var(--clr-neutral-300);
+	--clr-selection-text: var(--clr-neutral-900);
+
+	--clr-scrollbar-thumb: var(--clr-neutral-500);
+	--clr-scrollbar-thumb-hover: var(--clr-primary-300);
+	--clr-scrollbar-track: var(--clr-neutral-300);
+	--clr-scrollbar-track-hover: ;
+
+	--clr-divider: var(--clr-neutral-500);
+
+	--clr-border: var(--clr-neutral-500);
+
+	--clr-window-bg: var(--clr-secondary-200);
+
+	--clr-sidebar-bg: var(--clr-secondary-200);
+
+	--clr-section-bg: var(--clr-secondary-100);
+	--clr-section-header-bg: var(--clr-secondary-200);
+	--clr-section-footer-bg: var(--clr-secondary-200);
+
+	--clr-card-bg: var(--clr-secondary-100);
+	--clr-card-text: var(--clr-secondary-500);
+
+	--clr-chip-bg: var(--clr-secondary-100);
+}
