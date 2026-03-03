@@ -1,0 +1,14 @@
+.divider {
+	border: none;
+
+	&--vertical {
+		height: 100%;
+		border-left: var(--stroke-normal) solid var(--clr-divider);
+		align-self: stretch;
+	}
+
+	&:not(&--vertical) {
+		width: 100%;
+		border-top: var(--stroke-normal) solid var(--clr-divider);
+	}
+}
