@@ -7,7 +7,7 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nekithrill/portfolio-react"
+		"url": "https://github.com/nekithrill/portfolio"
 	},
 	"keywords": [
 		"nekithrill",
@@ -55,6 +55,7 @@
 		"@vitejs/plugin-react": "^5.0.0",
 		"stylelint": "^16.23.1",
 		"stylelint-config-standard-scss": "^15.0.1",
+		"stylelint-order": "^7.0.1",
 		"stylelint-scss": "^6.12.1",
 		"typescript": "^5.9.2",
 		"vite": "^7.1.2"
