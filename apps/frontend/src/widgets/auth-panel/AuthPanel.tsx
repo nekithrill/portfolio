@@ -1,14 +1,21 @@
-import { Avatar } from '@/shared/components/ui/avatar/Avatar'
+import { Avatar } from '@/shared/components/ui/avatar'
 import { CircleUserRound, LogIn, LogOut, UserRoundPlus } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import styles from './AuthPanel.module.scss'
 
-// Заглушка до реализации auth
 const useAuth = () => ({
 	isAuthenticated: false,
 	user: null as null | { username: string; avatar?: string }
 })
+
+// const useAuth = () => ({
+// 	isAuthenticated: true,
+// 	user: {
+// 		username: 'TestUsername22848',
+// 		avatar: 'https://i.pravatar.cc/40'
+// 	}
+// })
 
 export const AuthPanel = () => {
 	const { t } = useTranslation()
