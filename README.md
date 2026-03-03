@@ -1,177 +1,151 @@
-# **Portfolio app**
+# Portfolio app
 
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000000)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=ffffff)](https://www.typescriptlang.org/)
-[![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=ffffff)](https://sass-lang.com/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=ffffff)](https://vitejs.dev/)
-[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=ffffff)](https://eslint.org/)
-[![Stylelint](https://img.shields.io/badge/Stylelint-2e2e2e?style=for-the-badge&logo=stylelint)](https://stylelint.io/)
-[![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=000000)](https://prettier.io/)
+nekithrill's portfolio web app — fullstack application with React frontend and NestJS backend.
 
-## **🧩 Overview**
+🔗 [Live Demo](https://nekithrill.com)
 
-A React + TypeScript SPA built with Vite. Styled via SCSS modules and enhanced with animations and interactive components. Code quality ensured by ESLint, Stylelint, and Prettier.
+---
 
-<details>
-<summary><strong>📚 Dependencies</strong></summary>
-<br>
+## 🚀 Getting Started
 
-| Package                                 | Purpose                     |
-| --------------------------------------- | --------------------------- |
-| **React**, **ReactDOM**                 | UI                          |
-| **react-router-dom**                    | Routing                     |
-| **i18next**, **react-i18next**          | Localization                |
-| **Sass**                                | Styling                     |
-| **TypeScript**, **Vite**                | Type-safe tooling           |
-| **Framer Motion**                       | Animations                  |
-| **ESLint**, **Prettier**, **Stylelint** | Code quality and formatting |
+### Prerequisites
 
-<br>
-</details>
+- Node.js 18+
+- PostgreSQL 15+
 
-<details>
-<summary><strong>🧰 Compatibility</strong></summary>
-<br>
+### Installation
+
+```bash
+git clone https://github.com/nekithrill/portfolio.git
+cd portfolio
+```
+
+### Frontend
+
+```bash
+cd apps/frontend
+cp .env.example .env
+npm install
+npm run dev             # http://localhost:5173
+```
+
+### Backend
+
+```bash
+cd apps/backend
+cp .env.example .env
+npm install
+npx prisma migrate dev
+npm run dev             # http://localhost:3000
+```
+
+---
+
+## 🖥️ Frontend
+
+[![React](https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=000000)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=ffffff)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=plastic&logo=vite&logoColor=ffffff)](https://vitejs.dev/)
+[![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=plastic&logo=sass&logoColor=ffffff)](https://sass-lang.com/)
+[![Biome](https://img.shields.io/badge/Biome-60a5fa?style=plastic&logo=biome&logoColor=white)](https://biomejs.dev/)
+[![Stylelint](https://img.shields.io/badge/Stylelint-2e2e2e?style=plastic&logo=stylelint)](https://stylelint.io/)
+
+A React + TypeScript SPA built with Vite. Styled via SCSS modules and enhanced with animations and interactive components.
+
+### Dependencies
+
+| Package                        | Purpose            |
+| ------------------------------ | ------------------ |
+| **React**, **ReactDOM**        | UI                 |
+| **react-router-dom**           | Routing            |
+| **react-hook-form**, **zod**   | Forms & validation |
+| **@tanstack/react-query**      | Server state       |
+| **axios**                      | HTTP client        |
+| **i18next**, **react-i18next** | Localization       |
+| **framer-motion**              | Animations         |
+| **lucide-react**               | Icons              |
+| **react-markdown**             | Markdown rendering |
+| **sass**                       | Styling            |
+| **Biome**, **Stylelint**       | Code quality       |
+
+### Scripts
+
+| Script         | Command                                 | Purpose                                                  |
+| -------------- | --------------------------------------- | -------------------------------------------------------- |
+| `dev`          | `vite`                                  | Runs project in development mode.                        |
+| `build`        | `tsc -b && vite build`                  | Builds **TypeScript** and bundles project with **Vite**. |
+| `preview`      | `vite preview`                          | Local preview of production build.                       |
+| `lint:check`   | `biome lint src`                        | Checks JS/TS files with **Biome**.                       |
+| `lint:fix`     | `biome lint src --write`                | Autofix **Biome** lint errors.                           |
+| `format:check` | `biome format src`                      | Checks formatting with **Biome**.                        |
+| `format:fix`   | `biome format src --write`              | Autofix formatting with **Biome**.                       |
+| `style:check`  | `stylelint "src/**/*.{css,scss}"`       | Checks CSS/SCSS files with **Stylelint**.                |
+| `style:fix`    | `stylelint "src/**/*.{css,scss}" --fix` | Autofix **Stylelint** errors.                            |
+
+### Compatibility
 
 | Type               | Support | Notes                                                  |
 | ------------------ | :-----: | ------------------------------------------------------ |
 | 🌐 Modern browsers |   ✅    | Chrome, Firefox, Safari, Edge, Opera (last 2 versions) |
-| 🌐 IE              |   ❌    | not supported                                          |
+| 🌐 IE              |   ❌    | Not supported                                          |
 | 💻 Desktop         |   ✅    | ≥1024px                                                |
 | 📟 Tablet          |   ✅    | ≥768px                                                 |
 | 📱 Phone           |   ✅    | ≥360px                                                 |
 
-<br>
-</details>
+### Project Structure
 
-<details>
-<summary><strong>📜 Scripts</strong></summary>
-<br>
+The project follows an adapted [FSD (Feature-Sliced Design)](https://feature-sliced.design/) approach. It keeps the core layering principles (_app → pages → widgets → features → shared_), but omits deep segment splitting (_model, lib, api, etc._) until the project grows to a scale where it becomes necessary.
 
-| Script         | Command                                    | Purpose                                                  |
-| -------------- | ------------------------------------------ | -------------------------------------------------------- |
-| `dev`          | `vite`                                     | Runs project in development mode.                        |
-| `build`        | `tsc -b && vite build`                     | Builds **TypeScript** and bundles project with **Vite**. |
-| `preview`      | `vite preview`                             | Local preview of production build.                       |
-| `check:lint`   | `eslint src --ext .ts,.tsx,.js,.jsx`       | Checks JS/TS files with **ESLint**.                      |
-| `check:style`  | `stylelint \"src/**/*.{css,scss}\"`        | Checks CSS/SCSS files with **Stylelint**.                |
-| `check:format` | `prettier --check .`                       | Checks code formatting with **Prettier**.                |
-| `fix:lint`     | `eslint src --ext .ts,.tsx,.js,.jsx --fix` | Autofix **ESLint** errors.                               |
-| `fix:style`    | `stylelint \"src/**/*.{css,scss}\" --fix`  | Autofix **Stylelint** errors.                            |
-| `fix:format`   | `prettier --write .`                       | Formats code according to **Prettier** rules.            |
-|                |
+```
+📦 frontend/src
+├── 📁 app       — layouts, providers, styles
+├── 📁 pages     — application pages
+├── 📁 widgets   — composite ui blocks
+├── 📁 features  — business logic modules
+└── 📁 shared    — assets, components, configs, hooks, types
+```
 
-<br>
-</details>
+---
 
-## **🏗️ Project structure**
+## ⚙️ Backend
 
-<details>
-<summary><strong>🧱 Folders architecture</strong></summary>
-<br>
+[![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=plastic&logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=plastic&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=plastic&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=plastic&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
 
-The project follows an **adapted FSD (Feature-Sliced Design)** approach.  
-It keeps the core layering principles (_app → pages → widgets → features → shared_),  
-but with simplified module separation to match the app’s scope and personal preferences (w/o deep splitting).
+A NestJS REST API with PostgreSQL database and JWT authentication.
 
-- 📁 `app`: providers, layouts, global styles.
-- 📁 `pages`: pages that builds from widgets and used at app level.
-- 📁 `widgets`: blocks that builds from features/shared and used at pages level.
-- 📁 `features`: modules with business logic.
-- 📁 `shared`: reusable stuff (ui elements, icons, configs, hooks, assets).
+### Dependencies
 
-<pre lang="md">📦 root
-├── 📁 src  
-│    ├── 📁 app
-│    │    ├── 📁 providers
-│    │    ├── 📁 layouts
-│    │    ├── 📁 styles
-│    │    ├── 📄 App.tsx
-│    │    └── 📄 main.tsx
-│    │
-│    ├── 📁 pages
-│    │    ├── 📁 home
-│    │    ├── 📁 about
-│    │    ├── 📁 project
-│    │    ├── 📁 skills
-│    │    ├── 📁 contacts
-│    │    └── 📁 privacy
-│    │
-│    ├── 📁 features
-│    │    ├── 📁 file-container
-│    │    ├── 📁 language-switch
-│    │    ├── 📁 theme-switch
-│    │    └── 📁 clock
-│    │
-│    ├── 📁 shared
-│    │    ├── 📁 assets
-│    │    ├── 📁 components
-│    │    │   ├── 📁 ui
-│    │    │   └── 📁 icons
-│    │    │
-│    │    ├── 📁 configs
-│    │    │   └── 📁 i18n
-│    │    │        ├── 📁 locales
-│    │    │        │    ├── 📄 en.json
-│    │    │        │    ├── 📄 ua.json
-│    │    │        │    └── 📄 ru.json
-│    │    │        └── 📄 config.ts
-│    │    │
-│    │    ├── 📁 hooks
-│    │    └── 📁 types
-│    │    
-│    └── 📁 widgets
-│         ├── 📁 header
-│         ├── 📁 footer
-│         ├── 📁 navbar
-│         └── 📁 sidebar
-│
-├── 📄 index.html
-├── ⚙️ .gitignore
-├── ⚙️ .prettierignore
-├── ⚙️ .prettierrc
-├── ⚙️ .stylelintrc.cjs
-├── ⚙️ .eslintrc.cjs
-├── ⚙️ tsconfig.json
-├── ⚙️ tsconfig.node.json
-├── ⚙️ vite.config.ts
-├── ⚙️ vite-env.d.ts
-└── ⚙️ package.json
-</pre>
-<br>
-</details>
+| Package                                    | Purpose        |
+| ------------------------------------------ | -------------- |
+| **NestJS**                                 | Framework      |
+| **Prisma**                                 | ORM            |
+| **PostgreSQL**                             | Database       |
+| **JWT**                                    | Authentication |
+| **class-validator**, **class-transformer** | Validation     |
 
-<details>
-<summary><strong>🎨 Styling architecture</strong></summary>
-<br>
+### Scripts
 
-The project uses **SCSS modules** for component-level styling, combined with a simplified **7–1 architecture** for global styles.
-This approach keeps styles modular and scoped by default while maintaining a clear global structure for shared variables, mixins, and themes.
-Component-specific styles are implemented as **\*.module.scss** files located alongside their components.
+| Script    | Command              | Purpose                          |
+| --------- | -------------------- | -------------------------------- |
+| `dev`     | `nest start --watch` | Runs server in development mode. |
+| `build`   | `nest build`         | Builds the project.              |
+| `start`   | `node dist/main`     | Runs production build.           |
+| `migrate` | `prisma migrate dev` | Runs database migrations.        |
 
-- 📁 `abstracts`: global variables, mixins, and utility functions.
-- 📁 `base`: resets, typography, and global element styles.
-- 📁 `themes`: theme definitions.
-- 📄 `main`: entry point.
+### Project Structure
 
-<pre lang="md">📦 /app/styles
-├── 📁 abstracts
-│    ├── 📄 _breakpoints.scss
-│    ├── 📄 _animations.scss
-│    └── 📄 _index.scss
-│
-├── 📁 base
-│    ├── 📄 _reset.scss
-│    ├── 📄 _base.scss
-│    ├── 📄 _typography.scss
-│    └── 📄 _index.scss
-│
-├── 📁 themes
-│    ├── 📄 _light.scss
-│    ├── 📄 _dark.scss
-│    └── 📄 _index.scss
-│
-└── 📄 main.scss
-</pre>
-</details>
-<br>
+The backend follows a modular NestJS structure. Business logic is organized into self-contained modules, while cross-cutting concerns are separated into `common` and `shared`.
+
+```
+📦 backend/src
+├── 📁 common     — guards, decorators, filters, interceptors, pipes, middleware
+├── 📁 config     — database, environment and other app configurations
+├── 📁 modules    — feature modules (auth, user, etc.)
+├── 📁 prisma    — prisma client
+├── 📁 shared     — types, enums, constants
+├── 📄 app.module.ts
+└── 📄 main.ts
+```
