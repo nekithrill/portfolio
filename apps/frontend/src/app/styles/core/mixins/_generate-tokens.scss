@@ -6,6 +6,7 @@
 /// Detects nested vs flat structure and optionally converts px to rem
 /// @param {Map} $tokens - Token configuration with groups
 
+/* stylelint-disable max-nesting-depth */
 @mixin generate-tokens($tokens) {
 	@each $group-name, $config in $tokens {
 		$map: map.get($config, 'map');
@@ -53,6 +54,7 @@
 /// Check if map contains nested maps (first value is a map)
 /// @access private
 
+/* stylelint-disable scss/at-function-pattern */
 @function _is-nested-map($map) {
 	@if meta.type-of($map) != 'map' {
 		@return false;
