@@ -145,6 +145,7 @@ module.exports = {
 						'font-size',
 						'font-weight',
 						'font-style',
+						'font-display',
 						'line-height',
 						'letter-spacing',
 						'text-align',
