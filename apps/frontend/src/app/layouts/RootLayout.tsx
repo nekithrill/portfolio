@@ -1,5 +1,5 @@
-import { Content } from '@/widgets/content/Content'
-import { Sidebar } from '@/widgets/sidebar/Sidebar'
+import { Content } from '@/widgets/content'
+import { Sidebar } from '@/widgets/sidebar'
 import styles from './RootLayout.module.scss'
 
 export function RootLayout() {
