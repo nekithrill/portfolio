@@ -1,10 +1,10 @@
 # Portfolio app
 
-nekithrill's portfolio web app — fullstack application with React frontend and NestJS backend.
+Nekithrill's fullstack application with React frontend and NestJS backend.
 
 🔗 [Live Demo](https://nekithrill.com)
 
----
+<br>
 
 ## 🚀 Getting Started
 
