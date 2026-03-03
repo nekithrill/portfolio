@@ -1,0 +1,33 @@
+.footer {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--sp-2);
+
+	font-family: var(--ff-accent);
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		p {
+			color: var(--clr-text);
+		}
+
+		a {
+			color: var(--clr-text);
+			font-weight: var(--fw-bold);
+			transition: color var(--dur-normal) ease;
+
+			&:hover,
+			&:focus-visible {
+				color: var(--clr-text-hover);
+			}
+		}
+	}
+}

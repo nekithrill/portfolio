@@ -1,0 +1,31 @@
+.navbar {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: var(--ff-accent);
+	font-weight: var(--fw-bold);
+	gap: var(--sp-2);
+
+	&__link {
+		position: relative;
+
+		display: flex;
+		gap: var(--sp-2);
+
+		text-transform: uppercase;
+		vertical-align: middle;
+		color: var(--clr-text);
+		transition: color var(--dur-normal) ease;
+
+		&:not(&--active):hover,
+		&:not(&--active):focus-visible {
+			color: var(--clr-text-hover);
+		}
+
+		&--active {
+			color: var(--clr-text-accent);
+		}
+	}
+}
