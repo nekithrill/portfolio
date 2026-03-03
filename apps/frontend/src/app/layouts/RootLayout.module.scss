@@ -1,18 +1,20 @@
 .app {
-	min-height: 100vh;
-	width: 100%;
 	position: relative;
+
+	width: 100%;
+	min-height: 100vh;
+
+	overflow: hidden;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	color: var(--clr-text);
-	accent-color: var(--clr-text-accent);
 	background-color: var(--clr-bg);
 
-	overflow: hidden;
+	color: var(--clr-text);
+	accent-color: var(--clr-text-accent);
 
 	&__window {
 		width: 70%;
@@ -23,7 +25,8 @@
 		justify-content: space-between;
 		gap: 1rem;
 
-		backdrop-filter: blur(0.5rem);
 		color: var(--clr-text);
+
+		backdrop-filter: blur(0.5rem);
 	}
 }

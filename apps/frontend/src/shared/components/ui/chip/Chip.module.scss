@@ -4,8 +4,9 @@
 	display: inline-flex;
 	align-items: center;
 
-	font-weight: var(--fw-medium);
 	background-color: var(--clr-chip-bg);
+
+	font-weight: var(--fw-medium);
 
 	user-select: none;
 }

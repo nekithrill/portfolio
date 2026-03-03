@@ -7,15 +7,18 @@
 
 html {
 	height: 100%;
+
 	font-size: var(--fs-default);
 	scroll-behavior: smooth;
 }
 
 body {
 	min-height: 100%;
+
+	color: var(--clr-text);
+
 	font-family: var(--ff-primary), var(--ff-system);
 	font-weight: var(--fw-regular);
-	color: var(--clr-text);
 }
 
 h1,
@@ -24,9 +27,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: var(--fw-bold);
-	font-family: var(--ff-accent), var(--ff-primary), var(--ff-system);
 	color: var(--clr-text-accent);
+
+	font-family: var(--ff-accent), var(--ff-primary), var(--ff-system);
+	font-weight: var(--fw-bold);
 	text-transform: uppercase;
 }
 

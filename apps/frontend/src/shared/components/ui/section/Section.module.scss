@@ -1,13 +1,17 @@
+// REVIEW: Пересмотреть и допилить стили
+
 .section {
 	width: 100%;
+	overflow: hidden;
+
 	display: flex;
 	flex-direction: column;
 
 	border: var(--stroke-normal) solid var(--clr-border);
-	background-color: var(--clr-section-bg, transparent);
-	overflow: hidden;
 
-	& > * {
+	background-color: var(--clr-section-bg, transparent);
+
+	> * {
 		width: 100%;
 	}
 
@@ -30,9 +34,10 @@
 	&__footer {
 		display: flex;
 		flex-direction: column;
-		color: var(--clr-section-footer-text, inherit);
 		// background-color: var(--clr-section-footer-bg, transparent);
 		border-top: var(--stroke-normal) solid var(--clr-border);
+
+		color: var(--clr-section-footer-text, inherit);
 
 		p {
 			font-size: var(--fs-small-text);
@@ -40,10 +45,11 @@
 	}
 
 	&__content {
-		padding: 0 1rem;
 		margin: 1rem 0;
-		flex: 1;
+		padding: 0 1rem;
+
 		display: flex;
+		flex: 1;
 		gap: 1rem;
 	}
 }

@@ -1,28 +1,30 @@
 .switch {
-	height: 2.5rem;
-
 	position: relative;
+
+	height: 2.5rem;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	&__button {
-		height: 100%;
 		position: relative;
+
+		height: 100%;
 		padding: 0 var(--sp-1);
 
 		display: flex;
-		align-items: center;
 		justify-content: center;
+		align-items: center;
+
+		color: var(--clr-text);
 
 		font-family: var(--ff-accent);
 		font-size: var(--fs-default);
 		font-weight: var(--fw-bold);
 
-		color: var(--clr-text);
-		transition: color var(--dur-normal) ease;
 		cursor: pointer;
+		transition: color var(--dur-normal) ease;
 
 		&:not(&--active):hover,
 		&:not(&--active):focus-visible {
@@ -32,6 +34,7 @@
 		svg {
 			width: 1.5rem;
 			height: 1.5rem;
+
 			flex-shrink: 0;
 		}
 
