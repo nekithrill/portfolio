@@ -1,0 +1,58 @@
+.file-container {
+	display: flex;
+	align-items: center;
+	gap: var(--sp-1);
+
+	&__icon {
+		flex-shrink: 0;
+	}
+
+	&__info {
+		min-width: 0;
+
+		display: flex;
+		align-items: baseline;
+		gap: var(--sp-1);
+		flex: 1;
+	}
+
+	&__name {
+		font-family: var(--ff-accent);
+		font-weight: var(--fw-medium);
+		font-size: var(--fs-h3);
+		color: var(--clr-text);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__meta {
+		font-family: var(--ff-accent);
+		color: var(--clr-text);
+		opacity: 0.6;
+	}
+
+	&__actions {
+		display: flex;
+		flex-shrink: 0;
+		gap: var(--sp-2);
+	}
+
+	&__button {
+		width: 3rem;
+		height: 2rem;
+		border: none;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		color: var(--clr-text);
+		transition: color var(--dur-normal) ease;
+
+		&:hover,
+		&:focus-visible {
+			color: var(--clr-text-hover);
+		}
+	}
+}

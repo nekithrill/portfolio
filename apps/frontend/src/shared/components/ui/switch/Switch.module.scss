@@ -1,0 +1,42 @@
+.switch {
+	height: 2.5rem;
+
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__button {
+		height: 100%;
+		position: relative;
+		padding: 0 var(--sp-1);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		font-family: var(--ff-accent);
+		font-size: var(--fs-default);
+		font-weight: var(--fw-bold);
+
+		color: var(--clr-text);
+		transition: color var(--dur-normal) ease;
+		cursor: pointer;
+
+		&:not(&--active):hover,
+		&:not(&--active):focus-visible {
+			color: var(--clr-text-hover);
+		}
+
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+			flex-shrink: 0;
+		}
+
+		&--active {
+			color: var(--clr-text-accent);
+		}
+	}
+}
