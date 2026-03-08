@@ -1,5 +1,5 @@
 import styles from './Card.module.scss'
-import { CardProps } from './Card.types'
+import type { CardProps } from './Card.types'
 
 export const Card = ({ header, footer, children, className }: CardProps) => {
 	return (

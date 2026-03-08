@@ -1,4 +1,16 @@
 .card {
+	padding: var(--sp-2);
+
+	display: flex;
+	flex-direction: column;
+
 	background-color: var(--clr-card-bg);
 	color: var(--clr-card-text);
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		gap: var(--sp-1);
+	}
 }
