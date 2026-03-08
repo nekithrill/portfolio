@@ -1,11 +1,13 @@
-import React from 'react'
+import type React from 'react'
 
 export interface ProjectCardTag {
+	id: string
 	label: string
 	color?: string
 }
 
 export interface ProjectCardLink {
+	id: string
 	label: string
 	href: string
 	icon?: React.ReactNode
@@ -17,7 +19,6 @@ export interface ProjectCardProps {
 	title: string
 	tags?: ProjectCardTag[]
 	description: string
-	date?: string
 	links?: ProjectCardLink[]
 	className?: string
 }

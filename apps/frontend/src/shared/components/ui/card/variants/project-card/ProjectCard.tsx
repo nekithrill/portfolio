@@ -1,6 +1,6 @@
 import { Card } from '../../Card'
 import styles from './ProjectCard.module.scss'
-import { ProjectCardProps } from './ProjectCard.types'
+import type { ProjectCardProps } from './ProjectCard.types'
 
 export const ProjectCard = ({
 	image,
@@ -8,7 +8,6 @@ export const ProjectCard = ({
 	title,
 	tags,
 	description,
-	date,
 	links,
 	className
 }: ProjectCardProps) => {
@@ -22,12 +21,11 @@ export const ProjectCard = ({
 
 	const footer = (
 		<div className={styles['project-card__footer']}>
-			{date && <span className={styles['project-card__date']}>{date}</span>}
 			{links && links.length > 0 && (
 				<div className={styles['project-card__links']}>
-					{links.map((link, i) => (
+					{links.map(link => (
 						<a
-							key={i}
+							key={link.id}
 							href={link.href}
 							target='_blank'
 							rel='noopener noreferrer'
@@ -57,9 +55,9 @@ export const ProjectCard = ({
 
 				{tags && tags.length > 0 && (
 					<div className={styles['project-card__tags']}>
-						{tags.map((tag, i) => (
+						{tags.map(tag => (
 							<span
-								key={i}
+								key={tag.id}
 								className={styles['project-card__tag']}
 								style={
 									tag.color
