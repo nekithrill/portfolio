@@ -1,0 +1,22 @@
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	&__label {
+		font-size: 0.875rem;
+	}
+
+	&__field {
+		padding: 0.5rem 0.75rem;
+		border: 1px solid var(--clr-border);
+		background-color: transparent;
+		color: inherit;
+		font-size: 0.875rem;
+	}
+
+	&__error {
+		font-size: 0.75rem;
+		color: red;
+	}
+}
