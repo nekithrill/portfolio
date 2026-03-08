@@ -30,6 +30,7 @@ export const Switch = ({ items }: SwitchProps) => {
 		<div className={styles['switch']}>
 			{items.map(({ key, isActive, onClick, icon, label, ariaLabel }) => (
 				<button
+					type='button'
 					key={key}
 					onClick={onClick}
 					className={`${styles['switch__button']}${isActive ? ` ${styles['switch__button--active']}` : ''}`}
