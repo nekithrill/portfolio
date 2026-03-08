@@ -4,7 +4,7 @@
 		"enabled": true,
 		"clientKind": "git",
 		"useIgnoreFile": true,
-		"root": "../../"
+		"defaultBranch": "main"
 	},
 	"files": {
 		"ignoreUnknown": false
@@ -12,7 +12,10 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"complexity": {
+				"useLiteralKeys": "off"
+			}
 		}
 	},
 	"formatter": {
