@@ -6,6 +6,6 @@ interface DividerProps {
 
 export const Divider = ({ vertical = false }: DividerProps) => (
 	<hr
-		className={`${styles.divider} ${vertical ? styles['divider--vertical'] : ''}`}
+		className={`${styles['divider']} ${vertical ? styles['divider--vertical'] : ''}`}
 	/>
 )
