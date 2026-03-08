@@ -1,6 +1,6 @@
-import { Card } from '../../Card'
+import { Card, EducationCardProps } from '@/shared/components/ui/card'
+import { CalendarRange, GraduationCap, University } from 'lucide-react'
 import styles from './EducationCard.module.scss'
-import { EducationCardProps } from './EducationCard.types'
 
 export const EducationCard = ({
 	years,
@@ -8,18 +8,21 @@ export const EducationCard = ({
 	institution,
 	className
 }: EducationCardProps) => {
-	const header = (
-		<span className={styles['education-card__years']}>{years}</span>
-	)
-
 	return (
-		<Card
-			header={header}
-			className={`${styles['education-card']} ${className ?? ''}`}
-		>
+		<Card className={`${styles['education-card']} ${className ?? ''}`}>
 			<div className={styles['education-card__content']}>
-				<p className={styles['education-card__degree']}>{degree}</p>
-				<p className={styles['education-card__institution']}>{institution}</p>
+				<p className={styles['education-card__degree']}>
+					<GraduationCap />
+					{degree}
+				</p>
+				<p className={styles['education-card__years']}>
+					<CalendarRange />
+					{years}
+				</p>
+				<p className={styles['education-card__institution']}>
+					<University />
+					{institution}
+				</p>
 			</div>
 		</Card>
 	)
