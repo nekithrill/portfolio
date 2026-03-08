@@ -1,4 +1,4 @@
-import { Language } from '@/shared/types/locale'
+import type { Language } from '@/shared/types/locale'
 import { createContext } from 'react'
 
 export interface LanguageContextType {

@@ -1,4 +1,4 @@
-import { type ThemeSwitchResult } from '@/shared/types/theme'
+import type { ThemeSwitchResult } from '@/shared/types/theme'
 import { useContext } from 'react'
 import { ThemeContext } from './ThemeContext'
 

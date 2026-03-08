@@ -1,4 +1,8 @@
-import { Language, LANGUAGES, LOCAL_STORAGE_LANGUAGE_KEY } from '@/shared/types/locale'
+import {
+	type Language,
+	LANGUAGES,
+	LOCAL_STORAGE_LANGUAGE_KEY
+} from '@/shared/types/locale'
 import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
