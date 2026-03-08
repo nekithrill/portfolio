@@ -9,8 +9,15 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src')
 		}
 	},
+	css: {
+		preprocessorOptions: {
+			scss: {
+				loadPaths: [path.resolve(__dirname, './src')]
+			}
+		}
+	},
 	server: {
 		port: Number(process.env.VITE_PORT) || 3000,
-		host: true,
+		host: true
 	}
 })
