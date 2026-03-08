@@ -1,4 +1,5 @@
 import { Divider } from '@/shared/components/ui/divider'
+import { AuthPanel } from '@/widgets/auth-panel'
 import { Clock } from '@/widgets/clock'
 import { Controls } from '@/widgets/controls'
 import { Footer } from '@/widgets/footer'
@@ -8,8 +9,8 @@ import styles from './Sidebar.module.scss'
 export const Sidebar = () => {
 	return (
 		<aside className={styles['sidebar']}>
-			{/* <AuthPanel /> */}
-			{/* <Divider /> */}
+			<AuthPanel />
+			<Divider />
 			<Clock />
 			<Divider />
 			<Controls />
