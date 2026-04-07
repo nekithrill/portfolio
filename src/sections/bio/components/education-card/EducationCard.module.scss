@@ -1,0 +1,30 @@
+.education-card {
+	padding: var(--sp-4);
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-1);
+
+	border: var(--stroke-normal) solid var(--clr-border);
+
+	&__years,
+	&__degree,
+	&__institution {
+		display: flex;
+		align-items: center;
+		gap: var(--sp-1);
+
+		svg {
+			flex-shrink: 0;
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+
+	&__degree {
+		font-family: var(--ff-accent);
+	}
+
+	&__institution {
+		color: var(--clr-text-secondary);
+	}
+}
