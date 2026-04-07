@@ -1,0 +1,13 @@
+.button {
+	padding: var(--sp-1) var(--sp-3);
+
+	border: var(--stroke-normal) solid var(--clr-border);
+
+	cursor: pointer;
+
+	&:disabled {
+		opacity: 50%;
+
+		cursor: not-allowed;
+	}
+}
