@@ -1,0 +1,38 @@
+.header {
+	width: 100%;
+
+	position: relative;
+
+	display: flex;
+	gap: var(--sp-1);
+
+	&__name {
+		color: var(--clr-text);
+	}
+
+	&__role {
+		color: var(--clr-text-accent);
+		text-transform: uppercase;
+		letter-spacing: 0.05rem;
+	}
+
+	&__location {
+		color: var(--clr-text-secondary);
+	}
+}
+
+.status {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--sp-1);
+
+	&__dot {
+		width: 0.5rem;
+		height: 0.5rem;
+		flex-shrink: 0;
+	}
+
+	&__label {
+		text-transform: uppercase;
+	}
+}
