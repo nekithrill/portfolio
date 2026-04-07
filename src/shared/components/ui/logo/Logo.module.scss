@@ -1,0 +1,13 @@
+@use 'app/styles/core/mixins/breakpoint' as *;
+
+.logo {
+	width: 5rem;
+	height: auto;
+
+	display: block;
+	object-fit: contain;
+
+	@include breakpoint('xs') {
+		width: 3rem;
+	}
+}
