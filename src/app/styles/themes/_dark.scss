@@ -1,0 +1,37 @@
+[data-theme='dark'] {
+	--clr-text: var(--clr-neutral-100);
+	--clr-text-accent: var(--clr-primary-300);
+	--clr-text-hover: var(--clr-neutral-500);
+	--clr-text-sidebar: var(--clr-text-hover);
+	--clr-text-sidebar-hover: var(--clr-text);
+	--clr-text-secondary: grey;
+
+	--clr-bg: var(--clr-neutral-900);
+	--clr-bg-active: rgb(255 166 0 / 22%);
+	--clr-bg-hover: #6b6b6b;
+
+	--clr-selection-bg: var(--clr-neutral-300);
+	--clr-selection-text: var(--clr-neutral-700);
+
+	--clr-scrollbar-thumb: var(--clr-neutral-300);
+	--clr-scrollbar-thumb-hover: var(--clr-primary-300);
+	--clr-scrollbar-track: var(--clr-neutral-500);
+	--clr-scrollbar-track-hover: ;
+
+	--clr-divider: var(--clr-neutral-500);
+
+	--clr-border: var(--clr-neutral-500);
+
+	--clr-window-bg: var(--clr-secondary-700);
+
+	--clr-sidebar-bg: var(--clr-secondary-700);
+
+	--clr-section-bg: var(--clr-secondary-800);
+	--clr-section-header-bg: var(--clr-secondary-800);
+	--clr-section-footer-bg: var(--clr-secondary-800);
+
+	--clr-card-bg: var(--clr-secondary-700);
+	--clr-card-text: var(--clr-secondary-100);
+
+	--clr-chip-bg: var(--clr-secondary-600);
+}

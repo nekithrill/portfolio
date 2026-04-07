@@ -1,0 +1,120 @@
+// Box sizing - use border-box for predictable sizing
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// Remove default margins/padding for consistent starting point
+* {
+	margin: 0;
+	padding: 0;
+}
+
+// Body - better readability and text rendering
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Media - responsive by default, maintain aspect ratio
+img,
+picture,
+video,
+canvas,
+svg {
+	max-width: 100%;
+	height: auto;
+
+	display: block;
+}
+
+// Form elements - inherit typography for consistency
+input,
+button,
+textarea,
+select {
+	background: transparent;
+	color: inherit;
+
+	font: inherit;
+}
+
+// Lists - remove default styles (add back in content areas if needed)
+ol,
+ul {
+	list-style: none;
+}
+
+// Headings - reset to use design tokens instead
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+// Links - remove underline, inherit color
+a {
+	color: inherit;
+
+	text-decoration: none;
+}
+
+// Buttons - clean slate for custom styling
+button {
+	padding: 0;
+
+	border: none;
+
+	background: none;
+	color: inherit;
+
+	font: inherit;
+
+	cursor: pointer;
+}
+
+// Tables - consistent rendering across browsers
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Quotes - remove default quotation marks
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	/* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+	content: '';
+	content: none;
+}
+
+// Text overflow - prevent long words from breaking layout
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+// Root stacking context - prevents z-index issues
+/* stylelint-disable-next-line selector-id-pattern */
+#root,
+/* stylelint-disable-next-line selector-id-pattern */
+#__next {
+	isolation: isolate;
+}

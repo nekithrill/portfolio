@@ -1,0 +1,15 @@
+// Z-index tokens for stacking contexts
+
+$z-index: (
+	base: 0,
+	content: 100,
+	header: 200,
+	sidebar: 200,
+	footer: 200,
+	dropdown: 300,
+	sticky: 400,
+	overlay: 450,
+	drawer: 500,
+	modal: 600,
+	burger: 700
+) !default;

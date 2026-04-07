@@ -1,0 +1,62 @@
+:root {
+	// Default text colors (overridden by themes if present)
+	--clr-text: var(--clr-neutral-900);
+	--clr-text-accent: var(--clr-primary-500);
+	accent-color: var(--clr-text-accent);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	min-height: 100vh;
+	font-size: var(--fs-default);
+	scroll-padding-top: var(--sp-12);
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--clr-text);
+
+	font-family: var(--ff-primary), var(--ff-system);
+	font-weight: var(--fw-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--clr-text-accent);
+
+	font-family: var(--ff-accent), var(--ff-primary), var(--ff-system);
+	font-weight: var(--fw-bold);
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+
+h2 {
+	font-size: var(--fs-h2);
+}
+
+h3 {
+	font-size: var(--fs-h3);
+}
+
+h4 {
+	font-size: var(--fs-h4);
+}
+
+h5 {
+	font-size: var(--fs-h5);
+}
+
+h6 {
+	font-size: var(--fs-h6);
+}

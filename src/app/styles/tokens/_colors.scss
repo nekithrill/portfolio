@@ -1,0 +1,79 @@
+// Color tokens
+// OKLCH format recommended for perceptual uniformity
+
+// Hues for general colors
+$primary-hue: 55deg !default;
+$secondary-hue: 250deg !default;
+$neutral-hue: 200deg !default;
+
+// Hues for functional colors
+$success-hue: 160deg !default;
+$warning-hue: 80deg !default;
+$danger-hue: 25deg !default;
+$info-hue: 260deg !default;
+
+// PRIMARY - Orange accent
+$primary: (
+	100: oklch(92% 0.06 55deg),
+	300: oklch(80% 0.15 55deg),
+	500: oklch(65% 0.16 55deg),
+	700: oklch(45% 0.15 55deg),
+	900: oklch(30% 0.1 55deg)
+) !default;
+
+// SECONDARY - Slate
+$secondary: (
+	100: oklch(92% 0.005 240deg),
+	200: oklch(88% 0.008 240deg),
+	300: oklch(78% 0.01 240deg),
+	400: oklch(65% 0.012 240deg),
+	500: oklch(53% 0.018 240deg),
+	600: oklch(40% 0.02 240deg),
+	700: oklch(30% 0.022 240deg),
+	800: oklch(22% 0.024 240deg),
+	900: oklch(17% 0.026 240deg)
+) !default;
+
+// NEUTRAL - Grey
+$neutral: (
+	100: oklch(97% 0.008 240deg),
+	200: oklch(92% 0.009 240deg),
+	300: oklch(84% 0.01 240deg),
+	400: oklch(76% 0.011 240deg),
+	500: oklch(65% 0.012 240deg),
+	600: oklch(48% 0.013 240deg),
+	700: oklch(35% 0.014 240deg),
+	800: oklch(28% 0.014 240deg),
+	900: oklch(18% 0.015 240deg)
+) !default;
+
+// SUCCESS - Positive feedback, confirmations
+$success: (
+	text: oklch(75% 0.2 $success-hue)
+) !default;
+
+// DANGER - Errors, destructive actions
+$danger: (
+	text: oklch(70% 0.22 $danger-hue)
+) !default;
+
+// WARNING - Alerts, cautionary messages
+$warning: (
+	text: oklch(85% 0.18 $warning-hue)
+) !default;
+
+// INFO - Information, tips, neutral notifications
+$info: (
+	text: oklch(75% 0.18 $info-hue)
+) !default;
+
+// All colors map for CSS variable generation
+$all-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'neutral': $neutral,
+	'success': $success,
+	'warning': $warning,
+	'danger': $danger,
+	'info': $info
+) !default;
