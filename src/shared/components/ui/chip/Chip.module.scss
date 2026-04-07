@@ -1,0 +1,19 @@
+.chip {
+	padding: 0 var(--sp-1);
+
+	display: inline-flex;
+	align-items: center;
+
+	background-color: var(--clr-chip-bg);
+
+	font-weight: var(--fw-medium);
+	font-size: var(--fs-chip);
+
+	user-select: none;
+
+	&--dashed {
+		background-color: transparent;
+		border: var(--stroke-thin) dashed var(--clr-border);
+		color: var(--clr-text-secondary);
+	}
+}
