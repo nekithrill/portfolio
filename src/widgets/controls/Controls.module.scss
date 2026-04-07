@@ -1,0 +1,13 @@
+.controls {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-2);
+
+	&__switches {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: var(--sp-2);
+	}
+}
