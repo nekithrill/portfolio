@@ -1,0 +1,55 @@
+{
+	"menu": {
+		"bio": "Bio",
+		"skills": "Skills",
+		"projects": "Projects"
+	},
+	"sections": {
+		"bio": {
+			"title": "Bio",
+			"data": {
+				"name": "Mykyta Safonov",
+				"role": "Web developer",
+				"statusOpen": "Open to work",
+				"statusBusy": "Busy"
+			},
+			"about": {
+				"title": "About",
+				"textFrontend": "I'm Mykyta, a Web-developer from Ukraine. I focus on building clean, responsive interfaces with React and TypeScript — code that's easy to maintain and pleasant to use.",
+				"textBackend": "Also interested in backend development in order to better understand web development from all sides."
+			},
+			"education": {
+				"title": "Education",
+				"firstPlace": "College of Economics and Law of Zaporizhzhia National University",
+				"secondPlace": "Zaporizhzhia National University",
+				"specialty": "Software Engineering",
+				"specialist": "Junior Specialist, Software Engineering",
+				"bachelor": "Bachelor, Software Engineering"
+			}
+		},
+		"skills": {
+			"title": "Skills",
+			"tech": {
+				"title": "Technical skills",
+				"programmingLanguages": "Programming languages",
+				"frontend": "Frontend",
+				"backend": "Backend",
+				"tools": "Tools & Other"
+			},
+			"soft": {
+				"title": "Soft skills",
+				"communication": "Communicability",
+				"problemSolving": "Problem solving",
+				"adaptability": "Adaptability",
+				"creativity": "Creativity",
+				"enthusiasm": "Enthusiasm"
+			},
+			"principles": "Principles",
+			"exploring": "Exploring"
+		},
+		"projects": {
+			"title": "Projects",
+			"text": "Text"
+		}
+	}
+}
