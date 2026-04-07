@@ -1,0 +1,10 @@
+.projects {
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		min-width: 0;
+	}
+}
