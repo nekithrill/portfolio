@@ -1,0 +1,42 @@
+.switch {
+	display: inline-flex;
+
+	&__button {
+		min-width: 2.2rem;
+		min-height: 2.2rem;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border-bottom: var(--stroke-normal) solid transparent;
+
+		color: var(--clr-text-sidebar);
+
+		font-family: var(--ff-accent);
+		font-weight: var(--fw-bold);
+
+		cursor: pointer;
+		transition:
+			color var(--dur-normal) ease,
+			background-color var(--dur-normal) ease,
+			border-color var(--dur-normal) ease;
+
+		&:not(&--active):hover,
+		&:not(&--active):focus-visible {
+			background-color: var(--clr-bg-hover);
+			color: var(--clr-text-sidebar-hover);
+			border-bottom-color: var(--clr-text-sidebar-hover);
+		}
+
+		&--active {
+			background-color: var(--clr-bg-active);
+			color: var(--clr-text-accent);
+			border-bottom-color: var(--clr-text-accent);
+		}
+
+		svg {
+			flex-shrink: 0;
+		}
+	}
+}
