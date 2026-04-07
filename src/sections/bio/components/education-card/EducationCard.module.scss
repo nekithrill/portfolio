@@ -11,17 +11,13 @@
 	&__institution {
 		display: flex;
 		align-items: center;
-		gap: var(--sp-1);
+		gap: var(--sp-2);
 
 		svg {
 			flex-shrink: 0;
 			width: 1.5rem;
 			height: 1.5rem;
 		}
-	}
-
-	&__degree {
-		font-family: var(--ff-accent);
 	}
 
 	&__institution {
