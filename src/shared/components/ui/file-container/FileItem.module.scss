@@ -7,6 +7,7 @@
 
 	&__icon {
 		flex-shrink: 0;
+		color: var(--clr-text-accent);
 	}
 
 	&__info {
@@ -21,7 +22,7 @@
 	&__name {
 		overflow: hidden;
 
-		color: var(--clr-text);
+		color: var(--clr-text-accent);
 
 		font-family: var(--ff-accent);
 		font-size: var(--fs-h3);
@@ -55,7 +56,7 @@
 
 		border: none;
 
-		color: var(--clr-text);
+		color: var(--clr-text-accent);
 
 		transition: color var(--dur-normal) ease;
 
