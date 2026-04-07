@@ -1,0 +1,17 @@
+.links {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--sp-2);
+
+	&__item {
+		color: var(--clr-text-secondary);
+		transition: color var(--dur-normal) ease;
+
+		&:hover,
+		&:focus-visible {
+			color: var(--clr-text-accent);
+		}
+	}
+}
