@@ -1,0 +1,28 @@
+.clock {
+	// width: 100%;
+
+	font-family: var(--ff-accent);
+
+	&__time,
+	&__date {
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		font-weight: var(--fw-bold);
+
+		text-transform: uppercase;
+	}
+
+	&__time {
+		color: var(--clr-text-accent);
+
+		font-variant-numeric: tabular-nums;
+	}
+
+	&__date {
+		color: var(--clr-text-sidebar);
+	}
+}
