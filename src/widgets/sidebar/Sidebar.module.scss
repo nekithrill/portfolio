@@ -1,0 +1,82 @@
+@use 'app/styles/core/mixins/breakpoint' as *;
+
+.sidebar {
+	position: sticky;
+	top: var(--sp-8);
+
+	height: calc(100vh - var(--sp-8) - var(--sp-8));
+	width: 22rem;
+
+	padding: var(--sp-4);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	z-index: var(--z-sticky);
+
+	font-size: var(--fs-sidebar);
+
+	user-select: none;
+
+	&__burger {
+		position: fixed;
+		top: var(--sp-2);
+		left: var(--sp-2);
+		z-index: var(--z-burger);
+
+		display: none;
+
+		border: var(--stroke-normal) solid var(--clr-border);
+		background: var(--clr-sidebar-bg);
+		color: var(--clr-text);
+
+		cursor: pointer;
+	}
+
+	&__overlay {
+		position: fixed;
+		z-index: var(--z-overlay);
+
+		display: none;
+
+		background: rgb(20 20 20 / 60%);
+		inset: 0;
+	}
+
+	@include breakpoint('lg') {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		width: 20rem;
+		height: 100dvh;
+		padding: var(--sp-6) var(--sp-2);
+
+		z-index: var(--z-drawer);
+
+		transform: translateX(-100%);
+		transition: transform var(--dur-normal) ease;
+		background-color: var(--clr-sidebar-bg);
+
+		&--open {
+			transform: translateX(0);
+		}
+
+		&__burger {
+			display: flex;
+		}
+
+		&__overlay {
+			display: block;
+		}
+	}
+
+	@include breakpoint('sm') {
+	}
+	@include breakpoint('xs') {
+		font-size: var(--fs-sidebar-small);
+		width: clamp(256px, 80%, 280px);
+	}
+}
