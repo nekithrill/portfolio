@@ -1,9 +1,10 @@
 import type { ProjectCardProps } from '@/sections/projects/components/project-card'
+import portfolioImg from '@/shared/assets/images/portfolio.png'
 
 export const projectsData: Array<ProjectCardProps & { id: string }> = [
 	{
 		id: 'project-example-1',
-		image: '/src/shared/assets/images/portfolio.png',
+		image: portfolioImg,
 		imageAlt: 'Portfolio App',
 		title: 'Portfolio App',
 		tags: [
@@ -19,7 +20,7 @@ export const projectsData: Array<ProjectCardProps & { id: string }> = [
 	},
 	{
 		id: 'project-example-2',
-		image: '/src/shared/assets/images/portfolio.png',
+		image: portfolioImg,
 		imageAlt: 'Project Two',
 		title: 'Project Two',
 		tags: [
@@ -32,7 +33,7 @@ export const projectsData: Array<ProjectCardProps & { id: string }> = [
 	},
 	{
 		id: 'project-example-3',
-		image: '/src/shared/assets/images/portfolio.png',
+		image: portfolioImg,
 		imageAlt: 'Project Three',
 		title: 'Project Three',
 		tags: [
@@ -45,7 +46,7 @@ export const projectsData: Array<ProjectCardProps & { id: string }> = [
 	},
 	{
 		id: 'project-example-4',
-		image: '/src/shared/assets/images/portfolio.png',
+		image: portfolioImg,
 		imageAlt: 'Project Four',
 		title: 'Project Four',
 		tags: [
