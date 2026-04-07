@@ -1,5 +1,6 @@
 import { IconType } from 'react-icons'
-import { FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa'
+import { FiGithub, FiLinkedin } from 'react-icons/fi'
+import { RiTelegram2Line } from 'react-icons/ri'
 
 export interface LinkItem {
 	key: string
@@ -13,18 +14,18 @@ export const linksData: LinkItem[] = [
 		key: 'github',
 		href: 'https://github.com/nekithrill',
 		label: 'GitHub',
-		Icon: FaGithub
+		Icon: FiGithub
 	},
 	{
 		key: 'telegram',
 		href: 'https://t.me/nekithrill',
 		label: 'Telegram',
-		Icon: FaTelegram
+		Icon: RiTelegram2Line
 	},
 	{
 		key: 'linkedin',
 		href: 'https://linkedin.com/in/nekithrill',
 		label: 'LinkedIn',
-		Icon: FaLinkedin
+		Icon: FiLinkedin
 	}
 ]
