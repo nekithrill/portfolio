@@ -1,0 +1,67 @@
+@use 'app/styles/core/mixins/breakpoint' as *;
+
+.file-item {
+	display: flex;
+	align-items: center;
+	gap: var(--sp-1);
+
+	&__icon {
+		flex-shrink: 0;
+	}
+
+	&__info {
+		min-width: 0;
+
+		display: flex;
+		flex: 1;
+		align-items: baseline;
+		gap: var(--sp-1);
+	}
+
+	&__name {
+		overflow: hidden;
+
+		color: var(--clr-text);
+
+		font-family: var(--ff-accent);
+		font-size: var(--fs-h3);
+		font-weight: var(--fw-medium);
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__meta {
+		color: var(--clr-text-secondary);
+
+		font-family: var(--ff-accent);
+
+		@include breakpoint('xs') {
+			display: none;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		flex-shrink: 0;
+		gap: var(--sp-2);
+	}
+
+	&__button {
+		padding: var(--sp-1);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border: none;
+
+		color: var(--clr-text);
+
+		transition: color var(--dur-normal) ease;
+
+		&:hover,
+		&:focus-visible {
+			color: var(--clr-text-hover);
+		}
+	}
+}
