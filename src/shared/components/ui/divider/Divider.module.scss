@@ -1,0 +1,15 @@
+.divider {
+	border: none;
+
+	&--vertical {
+		align-self: stretch;
+
+		border-left: var(--stroke-normal) solid var(--clr-divider);
+	}
+
+	&:not(&--vertical) {
+		width: 100%;
+
+		border-top: var(--stroke-normal) solid var(--clr-divider);
+	}
+}
