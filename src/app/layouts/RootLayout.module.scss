@@ -45,9 +45,9 @@
 		padding: var(--sp-6);
 	}
 	@include breakpoint('md') {
-		padding: var(--sp-6) var(--sp-4);
+		padding: var(--sp-4);
 	}
 	@include breakpoint('sm') {
-		padding: var(--sp-6) var(--sp-2);
+		padding: var(--sp-2);
 	}
 }
