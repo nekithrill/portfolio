@@ -1,10 +1,8 @@
 # Portfolio app
 
-Nekithrill's portfolio application.
+My portfolio application.
 
-🔗 [Live Demo](https://nekithrill.com)
-
-<br>
+<!-- 🔗 [Live Demo](https://nekithrill.com) -->
 
 ## 🚀 Getting Started
 
@@ -20,9 +18,7 @@ npm install
 npm run dev             # http://localhost:5173
 ```
 
----
-
-## 🖥️ Frontend
+## ⚙️ Configuration
 
 [![React](https://img.shields.io/badge/React-55B2CC?style=plastic&logo=react&logoColor=ffffff)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=ffffff)](https://www.typescriptlang.org/)
@@ -40,7 +36,7 @@ A React + TypeScript SPA built with Vite. Styled via SCSS modules and enhanced w
 | Script         | Command                                 | Purpose                                                  |
 | -------------- | --------------------------------------- | -------------------------------------------------------- |
 | `dev`          | `vite`                                  | Runs project in development mode.                        |
-| `build`        | `tsc -b && vite build`                  | Builds **TypeScript** and bundles project with **Vite**. |
+| `build`        | `tsc && vite build`                     | Builds **TypeScript** and bundles project with **Vite**. |
 | `preview`      | `vite preview`                          | Local preview of production build.                       |
 | `lint:check`   | `biome lint src`                        | Checks JS/TS files with **Biome**.                       |
 | `lint:fix`     | `biome lint src --write`                | Autofix **Biome** lint errors.                           |
@@ -61,14 +57,14 @@ A React + TypeScript SPA built with Vite. Styled via SCSS modules and enhanced w
 
 ### Project Structure
 
-The project follows an adapted [FSD (Feature-Sliced Design)](https://feature-sliced.design/) approach. It keeps the core layering principles (_app → pages → widgets → features → shared_), but omits deep segment splitting (_model, lib, api, etc._) until the project grows to a scale where it becomes necessary.
+The project follows an adapted [FSD (Feature-Sliced Design)](https://feature-sliced.design/) approach. It keeps the core layering principles (_app → pages(sections in my case) → widgets → features → shared_), but omits deep segment splitting (_model, lib, api, etc._) until the project grows to a scale where it becomes necessary.
 
 For styling I used my personal template [SCSS-styles-system](https://github.com/nekithrill/scss-style-system).
 
 ```
 📦 frontend/src
 ├── 📁 app       — layouts, providers, styles
-├── 📁 pages     — application pages
+├── 📁 sections  — application sections
 ├── 📁 widgets   — composite ui blocks
 ├── 📁 features  — business logic modules
 └── 📁 shared    — assets, components, configs, hooks, types
