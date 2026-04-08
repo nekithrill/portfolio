@@ -22,13 +22,13 @@
 
 	&__burger {
 		position: fixed;
-		top: var(--sp-2);
-		left: var(--sp-2);
+		bottom: var(--sp-2);
+		right: var(--sp-2);
 		z-index: var(--z-burger);
+		padding: var(--sp-1);
 
 		display: none;
 
-		border: var(--stroke-normal) solid var(--clr-border);
 		background: var(--clr-sidebar-bg);
 		color: var(--clr-text-sidebar);
 
