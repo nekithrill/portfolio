@@ -5,7 +5,7 @@ export const bioData = {
 		fileName: 'cv',
 		fileUrl: cvFile,
 		fileFormat: 'PDF',
-		fileSize: '93 KB'
+		fileSize: '460 KB'
 	},
 	education: [
 		{
