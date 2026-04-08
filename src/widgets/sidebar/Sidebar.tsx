@@ -4,11 +4,18 @@ import { Footer } from '@/widgets/footer'
 import { Header } from '@/widgets/header'
 import { Navbar } from '@/widgets/navbar'
 import { Menu, X } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './Sidebar.module.scss'
 
 export const Sidebar = () => {
 	const [isOpen, setIsOpen] = useState(false)
+
+	useEffect(() => {
+		document.body.style.overflow = isOpen ? 'hidden' : ''
+		return () => {
+			document.body.style.overflow = ''
+		}
+	}, [isOpen])
 
 	return (
 		<>
