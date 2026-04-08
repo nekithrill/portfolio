@@ -1,7 +1,9 @@
+const cvFile = '/src/shared/assets/cv.pdf'
+
 export const bioData = {
 	cv: {
 		fileName: 'cv',
-		fileUrl: '/src/shared/assets/cv.pdf',
+		fileUrl: cvFile,
 		fileFormat: 'PDF',
 		fileSize: '93 KB'
 	},
