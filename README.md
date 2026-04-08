@@ -9,13 +9,8 @@ My portfolio application.
 ```bash
 git clone https://github.com/nekithrill/portfolio.git
 cd portfolio
-```
-
-```bash
-cd apps/frontend
-cp .env.example .env
 npm install
-npm run dev             # http://localhost:5173
+npm run dev
 ```
 
 ## ⚙️ Configuration
