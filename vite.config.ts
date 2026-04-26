@@ -13,7 +13,11 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {
 			scss: {
-				loadPaths: [path.resolve(__dirname, './src')]
+				loadPaths: [path.resolve(__dirname, './src')],
+				additionalData: `
+          @use "app/styles/core/functions" as *;
+          @use "app/styles/core/mixins" as *;
+        `,
 			}
 		}
 	},
