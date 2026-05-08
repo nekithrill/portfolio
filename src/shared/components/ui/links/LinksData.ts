@@ -1,4 +1,4 @@
-import { IconType } from 'react-icons'
+import type { IconType } from 'react-icons'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { RiTelegram2Line } from 'react-icons/ri'
 
