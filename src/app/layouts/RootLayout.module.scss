@@ -1,16 +1,9 @@
-@use 'app/styles/core/mixins/breakpoint' as *;
-
 .app {
-	display: flex;
-	justify-content: center;
-}
-
-.window {
-	--window-spacing: var(--sp-8);
+	--app-spacing: var(--sp-8);
 
 	max-width: 75rem;
 	width: 100%;
-	padding: var(--window-spacing) 0;
+	padding: var(--app-spacing) 0;
 
 	display: flex;
 	gap: var(--sp-8);
@@ -20,8 +13,8 @@
 	}
 
 	@include breakpoint('xl') {
-		max-width: 68rem;
-		gap: var(--sp-2);
+		max-width: 62rem;
+		gap: var(--sp-6);
 	}
 
 	@include breakpoint('lg') {
@@ -30,24 +23,5 @@
 
 		flex-direction: column;
 		gap: 0;
-	}
-}
-
-.content {
-	padding: var(--sp-4);
-
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	gap: var(--sp-12);
-
-	@include breakpoint('lg') {
-		padding: var(--sp-6);
-	}
-	@include breakpoint('md') {
-		padding: var(--sp-4);
-	}
-	@include breakpoint('sm') {
-		padding: var(--sp-2);
 	}
 }
