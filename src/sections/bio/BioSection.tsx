@@ -13,37 +13,34 @@ export function BioSection() {
 
 	return (
 		<Section id='bio'>
-			<Card>
-				<h2>{t('sections.bio.about.title')}</h2>
-				<div className={styles['bio__about']}>
-					<p>{t('sections.bio.about.textFrontend')}</p>
-					<p>{t('sections.bio.about.textBackend')}</p>
+			<h2>{t('sections.bio.about.title')}</h2>
 
-					<FileItem
-						file={{
-							name: cv.fileName,
-							url: cv.fileUrl,
-							format: cv.fileFormat,
-							size: cv.fileSize
-						}}
-					/>
-				</div>
+			<Card className={styles['bio__about']}>
+				<p>{t('sections.bio.about.textFrontend')}</p>
+				<p>{t('sections.bio.about.textBackend')}</p>
 			</Card>
 
-			<Card className={styles['bio__education']}>
-				<h2>{t('sections.bio.education.title')}</h2>
-
-				{education.map(item => (
-					<EducationCard
-						key={item.years}
-						years={item.years}
-						degree={
-							item.degree ? t(`sections.bio.education.${item.degree}`) : ''
-						}
-						institution={t(`sections.bio.education.${item.institution}`)}
-					/>
-				))}
+			<Card className={styles['bio__cv']}>
+				<FileItem
+					file={{
+						name: cv.fileName,
+						url: cv.fileUrl,
+						format: cv.fileFormat,
+						size: cv.fileSize
+					}}
+				/>
 			</Card>
+
+			<h2>{t('sections.bio.education.title')}</h2>
+
+			{education.map(item => (
+				<EducationCard
+					key={item.years}
+					years={item.years}
+					degree={item.degree ? t(`sections.bio.education.${item.degree}`) : ''}
+					institution={t(`sections.bio.education.${item.institution}`)}
+				/>
+			))}
 		</Section>
 	)
 }
