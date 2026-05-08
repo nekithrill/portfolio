@@ -1,43 +1,50 @@
 import type { ReactNode } from 'react'
 import styles from './Switch.module.scss'
 
-type IconItem = {
-	key: string
-	isActive: boolean
-	onClick: () => void
+type IconOption<T extends string> = {
+	value: T
 	icon: ReactNode
 	ariaLabel: string
 	label?: never
 }
 
-type LabelItem = {
-	key: string
-	isActive: boolean
-	onClick: () => void
+type LabelOption<T extends string> = {
+	value: T
 	label: string
-	icon?: never
 	ariaLabel?: string
+	icon?: never
 }
 
-type SwitchItem = IconItem | LabelItem
+type SwitchOption<T extends string> = IconOption<T> | LabelOption<T>
 
-interface SwitchProps {
-	items: SwitchItem[]
+interface SwitchProps<T extends string> {
+	options: SwitchOption<T>[]
+	value: T
+	onChange: (value: T) => void
 }
 
-export const Switch = ({ items }: SwitchProps) => {
+export const Switch = <T extends string>({
+	options,
+	value,
+	onChange
+}: SwitchProps<T>) => {
 	return (
 		<div className={styles['switch']}>
-			{items.map(({ key, isActive, onClick, icon, label, ariaLabel }) => (
+			{options.map(option => (
 				<button
 					type='button'
-					key={key}
-					onClick={onClick}
-					className={`${styles['switch__button']}${isActive ? ` ${styles['switch__button--active']}` : ''}`}
-					aria-label={ariaLabel ?? label}
-					aria-pressed={isActive}
+					key={option.value}
+					className={[
+						styles['switch__option'],
+						value === option.value && styles['switch__option--active']
+					]
+						.filter(Boolean)
+						.join(' ')}
+					aria-label={option.ariaLabel ?? option.label}
+					aria-pressed={value === option.value}
+					onClick={() => onChange(option.value)}
 				>
-					{icon ?? label}
+					{option.icon ?? option.label}
 				</button>
 			))}
 		</div>
