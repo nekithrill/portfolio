@@ -1,3 +1,4 @@
+import { Kbd } from '@/shared/components/ui/kbd'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from './Navbar.module.scss'
@@ -34,12 +35,13 @@ export const Navbar = () => {
 
 	return (
 		<nav className={styles['navbar']}>
-			{navItems.map(({ path, labelKey, Icon }) => (
+			{navItems.map(({ path, labelKey, hotkey, Icon }) => (
 				<a
 					key={path}
 					href={`#${path}`}
 					className={`${styles['navbar__link']} ${activeSection === path ? styles['navbar__link--active'] : ''}`}
 				>
+					<Kbd>{hotkey}</Kbd>
 					<span>{t(labelKey)}</span>
 					{Icon && <Icon size={ICON_SIZE} />}
 				</a>
