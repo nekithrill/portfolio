@@ -6,7 +6,7 @@ button:focus-visible,
 a:focus-visible,
 [role='button']:focus-visible,
 [tabindex]:focus-visible {
-	outline: var(--stroke-normal) solid var(--clr-text-accent);
+	outline: var(--bw-normal) solid var(--clr-focus);
 }
 
 // Hide outline for mouse/touch users (accessibility maintained for keyboard)
