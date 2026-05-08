@@ -5,11 +5,11 @@ import { headerData } from './HeaderData'
 const STATUS_CONFIG = {
 	open: {
 		key: 'sections.bio.data.statusOpen',
-		color: 'var(--clr-success-text)'
+		color: 'var(--clr-success-100)'
 	},
 	busy: {
 		key: 'sections.bio.data.statusBusy',
-		color: 'var(--clr-danger-text)'
+		color: 'var(--clr-error-100)'
 	}
 }
 

@@ -1,5 +1,5 @@
+import { Links } from '@/shared/components/ui/links'
 import { Logo } from '@/shared/components/ui/logo'
-import { Links } from '@/widgets/links'
 import styles from './Footer.module.scss'
 
 export const Footer = () => {

@@ -13,7 +13,7 @@
 	&__role {
 		color: var(--clr-text-accent);
 		text-transform: uppercase;
-		letter-spacing: 0.05rem;
+		letter-spacing: var(--ls-wide);
 	}
 
 	&__location {
@@ -29,6 +29,7 @@
 	&__dot {
 		width: 0.5rem;
 		height: 0.5rem;
+		border-radius: var(--br-xs);
 		flex-shrink: 0;
 	}
 
