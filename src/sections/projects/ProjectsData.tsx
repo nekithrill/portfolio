@@ -3,15 +3,17 @@ import portfolioImg from '@/shared/assets/images/portfolio.png'
 
 export const projectsData: Array<ProjectCardProps & { id: string }> = [
 	{
-		id: 'project-example-1',
+		id: 'portfolio',
 		image: portfolioImg,
 		imageAlt: 'Portfolio App',
 		title: 'Portfolio App',
 		tags: [
 			{ id: 'tag-react', label: 'React' },
 			{ id: 'tag-typescript', label: 'TypeScript' },
+			{ id: 'tag-zustand', label: 'Zustand' },
 			{ id: 'tag-scss', label: 'SCSS' },
-			{ id: 'tag-vite', label: 'Vite' }
+			{ id: 'tag-vite', label: 'Vite' },
+			{ id: 'tag-i18next', label: 'i18next' }
 		],
 		description:
 			'Personal portfolio built with React and TypeScript. Features a sidebar layout, multi-language support, theme switching and sections for bio, skills and projects.',
@@ -19,42 +21,17 @@ export const projectsData: Array<ProjectCardProps & { id: string }> = [
 		repoUrl: 'https://github.com/nekithrill/portfolio'
 	},
 	{
-		id: 'project-example-2',
+		id: 'scss-style-system',
 		image: portfolioImg,
-		imageAlt: 'Project Two',
-		title: 'Project Two',
+		imageAlt: 'SCSS style system',
+		title: 'SCSS style system',
 		tags: [
-			{ id: 'tag-react', label: 'React' },
-			{ id: 'tag-typescript', label: 'TypeScript' }
+			{ id: 'tag-css', label: 'CSS' },
+			{ id: 'tag-scss', label: 'SCSS' }
 		],
 		description:
 			'Second project description goes here. Built with React and TypeScript.',
-		repoUrl: 'https://github.com/nekithrill'
-	},
-	{
-		id: 'project-example-3',
-		image: portfolioImg,
-		imageAlt: 'Project Three',
-		title: 'Project Three',
-		tags: [
-			{ id: 'tag-react', label: 'React' },
-			{ id: 'tag-typescript', label: 'TypeScript' }
-		],
-		description:
-			'Third project description goes here. Built with React and TypeScript.',
-		repoUrl: 'https://github.com/nekithrill'
-	},
-	{
-		id: 'project-example-4',
-		image: portfolioImg,
-		imageAlt: 'Project Four',
-		title: 'Project Four',
-		tags: [
-			{ id: 'tag-react', label: 'React' },
-			{ id: 'tag-typescript', label: 'TypeScript' }
-		],
-		description:
-			'Fourth project description goes here. Built with React and TypeScript.',
-		repoUrl: 'https://github.com/nekithrill'
+		demoUrl: '#',
+		repoUrl: 'https://github.com/nekithrill/scss-style-system'
 	}
 ]
