@@ -1,7 +1,8 @@
+import type { LanguageSwitchResult } from '@/shared/types/locale'
 import { useContext } from 'react'
-import { LanguageContext, type LanguageContextType } from './LanguageContext'
+import { LanguageContext } from './LanguageContext'
 
-export const useLanguage = (): LanguageContextType => {
+export const useLanguage = (): LanguageSwitchResult => {
 	const context = useContext(LanguageContext)
 
 	if (!context) {
