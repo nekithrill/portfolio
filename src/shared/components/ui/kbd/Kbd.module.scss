@@ -1,0 +1,10 @@
+.kbd {
+	font-family: var(--ff-mono);
+	font-size: 11px;
+	padding: 0 5px;
+	border-radius: var(--br-sm);
+	border: var(--bw-thin) solid var(--clr-text-secondary);
+	color: var(--clr-text-secondary);
+	align-self: center;
+	pointer-events: none;
+}
