@@ -4,12 +4,12 @@
 	&--vertical {
 		align-self: stretch;
 
-		border-left: var(--stroke-normal) solid var(--clr-divider);
+		border-left: var(--bw-thin) solid var(--clr-border);
 	}
 
 	&:not(&--vertical) {
 		width: 100%;
 
-		border-top: var(--stroke-normal) solid var(--clr-divider);
+		border-top: var(--bw-thin) solid var(--clr-border);
 	}
 }

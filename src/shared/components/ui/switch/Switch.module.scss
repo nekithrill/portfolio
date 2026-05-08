@@ -1,7 +1,7 @@
 .switch {
 	display: inline-flex;
 
-	&__button {
+	&__option {
 		min-width: 2.2rem;
 		min-height: 2.2rem;
 
@@ -9,9 +9,10 @@
 		justify-content: center;
 		align-items: center;
 
-		border-bottom: var(--stroke-normal) solid transparent;
+		border-radius: var(--br-sm);
+		border-bottom: var(--bw-normal) solid transparent;
 
-		color: var(--clr-text-sidebar);
+		color: var(--clr-switch-text);
 
 		font-family: var(--ff-accent);
 		font-weight: var(--fw-bold);
@@ -24,15 +25,15 @@
 
 		&:not(&--active):hover,
 		&:not(&--active):focus-visible {
-			background-color: var(--clr-bg-hover);
-			color: var(--clr-text-sidebar-hover);
-			border-bottom-color: var(--clr-text-sidebar-hover);
+			background-color: var(--clr-switch-bg-hover);
+			color: var(--clr-switch-text-hover);
+			border-bottom-color: var(--clr-switch-text-hover);
 		}
 
 		&--active {
-			background-color: var(--clr-bg-active);
-			color: var(--clr-text-accent);
-			border-bottom-color: var(--clr-text-accent);
+			background-color: var(--clr-switch-bg-active);
+			color: var(--clr-switch-text-active);
+			border-bottom-color: var(--clr-switch-text-active);
 		}
 
 		svg {

@@ -4,6 +4,7 @@
 	display: inline-flex;
 	align-items: center;
 
+	border-radius: var(--br-md);
 	background-color: var(--clr-chip-bg);
 
 	font-weight: var(--fw-medium);
@@ -13,7 +14,7 @@
 
 	&--dashed {
 		background-color: transparent;
-		border: var(--stroke-thin) dashed var(--clr-border);
+		border: var(--bw-thin) dashed var(--clr-border);
 		color: var(--clr-text-secondary);
 	}
 }
