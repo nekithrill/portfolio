@@ -1,14 +1,15 @@
-@use 'app/styles/core/mixins/breakpoint' as *;
-
 .sidebar {
 	position: sticky;
 	top: var(--sp-8);
 
 	height: calc(100dvh - var(--sp-8) - var(--sp-8));
-	width: 22rem;
+	width: 23rem;
 
 	padding: var(--sp-4);
 
+	background-color: var(--clr-sidebar-bg);
+	border: var(--bw-thin) solid var(--clr-border);
+	border-radius: var(--br-md);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -24,13 +25,16 @@
 		position: fixed;
 		bottom: var(--sp-2);
 		right: var(--sp-2);
-		z-index: var(--z-burger);
+		z-index: var(--z-sidebar);
 		padding: var(--sp-1);
+
+		border-radius: var(--br-md);
+		border: var(--bw-thin) solid var(--clr-border);
 
 		display: none;
 
 		background: var(--clr-sidebar-bg);
-		color: var(--clr-text-sidebar);
+		color: var(--clr-border);
 
 		cursor: pointer;
 	}
@@ -54,7 +58,10 @@
 		height: 100dvh;
 		padding: var(--sp-6) var(--sp-2);
 
-		z-index: var(--z-drawer);
+		border-radius: 0;
+		border: none;
+
+		z-index: var(--z-sidebar);
 
 		transform: translateX(-100%);
 		transition: transform var(--dur-normal) ease;
