@@ -1,13 +1,14 @@
 @use 'sass:math';
 @use 'sass:meta';
 @use 'sass:list';
+@use '../../tokens/typography' as *;
 
 /// Converts pixel values to rem units
 /// @param {Number | List} $value - Value in px, list of values, or zero
 /// @param {Number} $base - Base font-size in pixels (default: 16)
 /// @return {Number | List} - Corresponding rem value(s)
 
-@function px-to-rem($value, $base: 16) {
+@function px-to-rem($value, $base: $base-font-size) {
 	@if meta.type-of($value) == 'number' {
 		@if $value == 0 {
 			@return 0;
@@ -20,7 +21,7 @@
 				@return $value;
 			}
 
-			@return math.div($value, $base * 1px) * 1rem;
+			@return math.div($value, $base) * 1rem;
 		}
 
 		@return $value;
