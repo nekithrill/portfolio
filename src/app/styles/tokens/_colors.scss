@@ -2,15 +2,15 @@
 // OKLCH format recommended for perceptual uniformity
 
 // Hues for general colors
-$primary-hue: 55deg !default;
-$secondary-hue: 250deg !default;
-$neutral-hue: 200deg !default;
+$primary-hue: 55deg;
+$secondary-hue: 260deg;
+$neutral-hue: 255deg;
 
 // Hues for functional colors
-$success-hue: 160deg !default;
-$warning-hue: 80deg !default;
-$danger-hue: 25deg !default;
-$info-hue: 260deg !default;
+$success-hue: 160deg;
+$warning-hue: 80deg;
+$danger-hue: 25deg;
+$info-hue: 260deg;
 
 // PRIMARY - Orange accent
 $primary: (
@@ -19,53 +19,61 @@ $primary: (
 	500: oklch(65% 0.16 55deg),
 	700: oklch(45% 0.15 55deg),
 	900: oklch(30% 0.1 55deg)
-) !default;
+);
 
 // SECONDARY - Slate
 $secondary: (
-	100: oklch(92% 0.005 240deg),
-	200: oklch(88% 0.008 240deg),
-	300: oklch(78% 0.01 240deg),
-	400: oklch(65% 0.012 240deg),
-	500: oklch(53% 0.018 240deg),
-	600: oklch(40% 0.02 240deg),
-	700: oklch(30% 0.022 240deg),
-	800: oklch(22% 0.024 240deg),
-	900: oklch(17% 0.026 240deg)
-) !default;
+	100: oklch(92% 0.02 $secondary-hue),
+	300: oklch(75% 0.06 $secondary-hue),
+	500: oklch(45% 0.12 $secondary-hue),
+	700: oklch(25% 0.02 $secondary-hue),
+	900: oklch(12% 0.05 $secondary-hue)
+);
 
 // NEUTRAL - Grey
 $neutral: (
-	100: oklch(97% 0.008 240deg),
-	200: oklch(92% 0.009 240deg),
-	300: oklch(84% 0.01 240deg),
-	400: oklch(76% 0.011 240deg),
-	500: oklch(65% 0.012 240deg),
-	600: oklch(48% 0.013 240deg),
-	700: oklch(35% 0.014 240deg),
-	800: oklch(28% 0.014 240deg),
-	900: oklch(18% 0.015 240deg)
-) !default;
+	100: oklch(93% 0.01 $neutral-hue),
+	300: oklch(84% 0.015 $neutral-hue),
+	500: oklch(60% 0.02 $neutral-hue),
+	700: oklch(32% 0.025 $neutral-hue),
+	900: oklch(18% 0.025 $neutral-hue)
+);
 
 // SUCCESS - Positive feedback, confirmations
 $success: (
-	text: oklch(75% 0.2 $success-hue)
-) !default;
+	100: oklch(75% 0.2 $success-hue),
+	300: oklch(75% 0.2 $success-hue),
+	500: oklch(75% 0.2 $success-hue),
+	700: oklch(75% 0.2 $success-hue),
+	900: oklch(75% 0.2 $success-hue)
+);
 
-// DANGER - Errors, destructive actions
-$danger: (
-	text: oklch(70% 0.22 $danger-hue)
-) !default;
+// error - Errors, destructive actions
+$error: (
+	100: oklch(75% 0.2 $danger-hue),
+	300: oklch(75% 0.2 $danger-hue),
+	500: oklch(75% 0.2 $danger-hue),
+	700: oklch(75% 0.2 $danger-hue),
+	900: oklch(75% 0.2 $danger-hue)
+);
 
 // WARNING - Alerts, cautionary messages
 $warning: (
-	text: oklch(85% 0.18 $warning-hue)
-) !default;
+	100: oklch(75% 0.2 $warning-hue),
+	300: oklch(75% 0.2 $warning-hue),
+	500: oklch(75% 0.2 $warning-hue),
+	700: oklch(75% 0.2 $warning-hue),
+	900: oklch(75% 0.2 $warning-hue)
+);
 
 // INFO - Information, tips, neutral notifications
 $info: (
-	text: oklch(75% 0.18 $info-hue)
-) !default;
+	100: oklch(75% 0.2 $info-hue),
+	300: oklch(75% 0.2 $info-hue),
+	500: oklch(75% 0.2 $info-hue),
+	700: oklch(75% 0.2 $info-hue),
+	900: oklch(75% 0.2 $info-hue)
+);
 
 // All colors map for CSS variable generation
 $all-colors: (
@@ -73,7 +81,5 @@ $all-colors: (
 	'secondary': $secondary,
 	'neutral': $neutral,
 	'success': $success,
-	'warning': $warning,
-	'danger': $danger,
-	'info': $info
-) !default;
+	'error': $error
+);
