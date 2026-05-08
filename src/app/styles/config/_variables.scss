@@ -29,19 +29,27 @@ $base-tokens: (
 		prefix: 'fs',
 		transform: 'rem'
 	),
+	line-heights: (
+		map: $line-heights,
+		prefix: 'lh'
+	),
+	letter-spacings: (
+		map: $letter-spacings,
+		prefix: 'ls'
+	),
 	spacing: (
 		map: $spacing,
 		prefix: 'sp',
 		transform: 'rem'
 	),
-	radius: (
+	border-radius: (
 		map: $border-radius,
-		prefix: 'rd',
+		prefix: 'br',
 		transform: 'rem'
 	),
-	stroke: (
-		map: $stroke-width,
-		prefix: 'stroke'
+	border-width: (
+		map: $border-width,
+		prefix: 'bw'
 	),
 	shadows: (
 		map: $shadows,
