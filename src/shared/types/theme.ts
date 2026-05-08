@@ -7,4 +7,5 @@ export type Theme = 'system' | 'light' | 'dark'
 export interface ThemeSwitchResult {
 	theme: Theme
 	setTheme: (theme: Theme) => void
+	toggleTheme: () => void
 }
