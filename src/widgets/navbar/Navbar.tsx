@@ -29,7 +29,9 @@ export const Navbar = () => {
 			}
 		)
 
-		sections.forEach(sec => observer.observe(sec))
+		for (const sec of sections) {
+			observer.observe(sec)
+		}
 		return () => observer.disconnect()
 	}, [])
 
