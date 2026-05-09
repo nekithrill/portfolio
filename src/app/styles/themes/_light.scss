@@ -1,8 +1,9 @@
 :root {
-	--clr-text: var(--clr-neutral-600);
+	--clr-text: var(--clr-neutral-700);
 	--clr-text-accent: var(--clr-primary-600);
 	--clr-text-hover: var(--clr-neutral-500);
-	--clr-text-secondary: var(--clr-neutral-400);
+	--clr-text-secondary: var(--clr-neutral-600);
+	--clr-text-tertiary: var(--clr-neutral-500);
 
 	--clr-app-bg: var(--clr-neutral-100);
 
@@ -21,7 +22,7 @@
 
 	--clr-nav-bg-hover: #bbbbbb;
 	--clr-nav-bg-active: rgb(255 166 0 / 22%);
-	--clr-nav-text: var(--clr-text-hover);
+	--clr-nav-text: var(--clr-text);
 	--clr-nav-text-hover: var(--clr-text);
 	--clr-nav-text-active: var(--clr-text-accent);
 
