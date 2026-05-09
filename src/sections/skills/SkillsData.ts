@@ -56,7 +56,7 @@ export const skillsData: SkillSection[] = [
 		title: 'Currently Exploring',
 		items: [
 			{ label: 'Learning', value: 'Advanced React / TS' },
-			{ label: 'Interest', value: 'PixiJS / Elixir' },
+			{ label: 'Interest', value: 'PixiJS / Anime.js' },
 			{ label: 'Next', value: '...' }
 		]
 	}
