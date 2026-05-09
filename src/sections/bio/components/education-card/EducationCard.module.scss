@@ -20,7 +20,10 @@
 		}
 	}
 
-	&__institution {
+	&__degree {
 		color: var(--clr-text-secondary);
+	}
+	&__institution {
+		color: var(--clr-text-tertiary);
 	}
 }
