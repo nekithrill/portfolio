@@ -9,7 +9,7 @@ export function SkillsSection() {
 
 	return (
 		<Section id='skills' className={styles['skills']}>
-			<h2>{t('sections.skills.tech.title')}</h2>
+			<h2>{t('sections.skills.title')}</h2>
 			<div className={styles['skills__grid']}>
 				{skillsData.map(section => (
 					<Card key={section.id} className={styles['skills__card']}>
