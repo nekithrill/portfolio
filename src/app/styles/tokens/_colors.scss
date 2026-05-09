@@ -1,84 +1,57 @@
 // Color tokens
-// OKLCH format recommended for perceptual uniformity
+// 💡 OKLCH format recommended for perceptual uniformity
 
-// Hues for general colors
-$primary-hue: 55deg;
-$secondary-hue: 260deg;
-$neutral-hue: 255deg;
-
-// Hues for functional colors
-$success-hue: 160deg;
-$warning-hue: 80deg;
-$danger-hue: 25deg;
-$info-hue: 260deg;
-
-// PRIMARY - Orange accent
+// PRIMARY - Brand colors, accents, interactive elements
 $primary: (
-	100: oklch(92% 0.06 55deg),
-	300: oklch(80% 0.15 55deg),
-	500: oklch(65% 0.16 55deg),
-	700: oklch(45% 0.15 55deg),
-	900: oklch(30% 0.1 55deg)
+	50: oklch(98.49% 0.02 91.58),
+	100: oklch(96.05% 0.058 93.52),
+	200: oklch(91.91% 0.114 93.23),
+	300: oklch(87.29% 0.153 88.74),
+	400: oklch(82.95% 0.165 81.09),
+	500: oklch(76.05% 0.167 66.25),
+	600: oklch(65% 0.16 54.79),
+	700: oklch(55.08% 0.152 46.15),
+	800: oklch(46.87% 0.129 43.7),
+	900: oklch(41.05% 0.109 43.6),
+	950: oklch(27.74% 0.078 43.68)
 );
 
-// SECONDARY - Slate
-$secondary: (
-	100: oklch(92% 0.02 $secondary-hue),
-	300: oklch(75% 0.06 $secondary-hue),
-	500: oklch(45% 0.12 $secondary-hue),
-	700: oklch(25% 0.02 $secondary-hue),
-	900: oklch(12% 0.05 $secondary-hue)
-);
-
-// NEUTRAL - Grey
+// NEUTRAL - Text, borders, icons, dividers
 $neutral: (
-	100: oklch(93% 0.01 $neutral-hue),
-	300: oklch(84% 0.015 $neutral-hue),
-	500: oklch(60% 0.02 $neutral-hue),
-	700: oklch(32% 0.025 $neutral-hue),
-	900: oklch(18% 0.025 $neutral-hue)
+	50: oklch(98.48% 0.001 106.42),
+	100: oklch(96.99% 0.001 106.42),
+	200: oklch(92.96% 0.00658 106.779),
+	300: oklch(87.57% 0.00965 93.613),
+	400: oklch(71.57% 0.015 53.27),
+	500: oklch(54.03% 0.019 52.33),
+	600: oklch(44.65% 0.016 71.11),
+	700: oklch(37.39% 0.015 59.18),
+	800: oklch(27.797% 0.01155 84.571),
+	900: oklch(22.062% 0.01131 73.302),
+	950: oklch(14.47% 0.008 35.75)
 );
 
 // SUCCESS - Positive feedback, confirmations
 $success: (
-	100: oklch(75% 0.2 $success-hue),
-	300: oklch(75% 0.2 $success-hue),
-	500: oklch(75% 0.2 $success-hue),
-	700: oklch(75% 0.2 $success-hue),
-	900: oklch(75% 0.2 $success-hue)
+	100: oklch(95.57% 0.039 147.63),
+	300: oklch(84.22% 0.121 147.26),
+	500: oklch(66.33% 0.176 145.32),
+	700: oklch(48.56% 0.126 145.48),
+	900: oklch(36.68% 0.081 146.85)
 );
 
-// error - Errors, destructive actions
+// ERROR - Errors, destructive actions
 $error: (
-	100: oklch(75% 0.2 $danger-hue),
-	300: oklch(75% 0.2 $danger-hue),
-	500: oklch(75% 0.2 $danger-hue),
-	700: oklch(75% 0.2 $danger-hue),
-	900: oklch(75% 0.2 $danger-hue)
-);
-
-// WARNING - Alerts, cautionary messages
-$warning: (
-	100: oklch(75% 0.2 $warning-hue),
-	300: oklch(75% 0.2 $warning-hue),
-	500: oklch(75% 0.2 $warning-hue),
-	700: oklch(75% 0.2 $warning-hue),
-	900: oklch(75% 0.2 $warning-hue)
-);
-
-// INFO - Information, tips, neutral notifications
-$info: (
-	100: oklch(75% 0.2 $info-hue),
-	300: oklch(75% 0.2 $info-hue),
-	500: oklch(75% 0.2 $info-hue),
-	700: oklch(75% 0.2 $info-hue),
-	900: oklch(75% 0.2 $info-hue)
+	100: oklch(93.72% 0.029 15.02),
+	300: oklch(81.1% 0.096 16.96),
+	500: oklch(63.52% 0.197 22.46),
+	700: oklch(50.03% 0.182 25.21),
+	900: oklch(39.44% 0.126 22.87)
 );
 
 // All colors map for CSS variable generation
 $all-colors: (
 	'primary': $primary,
-	'secondary': $secondary,
 	'neutral': $neutral,
 	'success': $success,
 	'error': $error
