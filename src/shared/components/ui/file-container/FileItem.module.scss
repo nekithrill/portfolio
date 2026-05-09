@@ -1,27 +1,26 @@
 .file-item {
-	display: flex;
+	display: grid;
+	// Колонки: иконка, название/мета, кнопки
+	grid-template-columns: auto 1fr auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		'icon name actions'
+		'meta meta actions';
+
+	column-gap: var(--sp-1);
 	align-items: center;
-	gap: var(--sp-1);
+	padding: var(--sp-1) 0;
 
 	&__icon {
+		grid-area: icon;
 		flex-shrink: 0;
 		color: var(--clr-text-accent);
 	}
 
-	&__info {
-		min-width: 0;
-
-		display: flex;
-		flex: 1;
-		align-items: baseline;
-		gap: var(--sp-1);
-	}
-
 	&__name {
+		grid-area: name;
 		overflow: hidden;
-
 		color: var(--clr-text-accent);
-
 		font-family: var(--ff-accent);
 		font-size: var(--fs-h3);
 		font-weight: var(--fw-medium);
@@ -30,16 +29,21 @@
 	}
 
 	&__meta {
+		grid-area: meta;
 		color: var(--clr-text-secondary);
-
-		font-family: var(--ff-accent);
+		font-family: var(--ff-primary);
+		font-size: 0.85rem;
 
 		@include breakpoint('xs') {
 			display: none;
+			grid-template-areas:
+				'icon name actions'
+				'icon name actions';
 		}
 	}
 
 	&__actions {
+		grid-area: actions;
 		display: flex;
 		flex-shrink: 0;
 		gap: var(--sp-2);
@@ -47,15 +51,11 @@
 
 	&__button {
 		padding: var(--sp-1);
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		border: none;
-
 		color: var(--clr-text-accent);
-
 		transition: color var(--dur-normal) ease;
 
 		&:hover,

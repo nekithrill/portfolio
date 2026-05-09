@@ -1,6 +1,4 @@
-// REVIEW: Пересмотреть и принять решение, как именно его закончить
-
-import { Download, Eye, File } from 'lucide-react'
+import { Download, Eye, FileUser } from 'lucide-react'
 import styles from './FileItem.module.scss'
 
 interface FileInfo {
@@ -15,17 +13,18 @@ interface FileItemProps {
 }
 
 export const FileItem = ({ file }: FileItemProps) => {
+	const metaData = [file.format, file.size].filter(Boolean).join(' · ')
+
 	return (
 		<div className={styles['file-item']}>
-			<File className={styles['file-item__icon']} aria-hidden />
-			<div className={styles['file-item__info']}>
-				<span className={styles['file-item__name']}>{file.name}</span>
-				{(file.format || file.size) && (
-					<span className={styles['file-item__meta']}>
-						({[file.format, file.size].filter(Boolean).join(' · ')})
-					</span>
-				)}
-			</div>
+			<FileUser className={styles['file-item__icon']} aria-hidden />
+
+			<span className={styles['file-item__name']}>{file.name}</span>
+
+			{metaData && (
+				<span className={styles['file-item__meta']}>[{metaData}]</span>
+			)}
+
 			<div className={styles['file-item__actions']}>
 				<a
 					className={styles['file-item__button']}
@@ -34,7 +33,7 @@ export const FileItem = ({ file }: FileItemProps) => {
 					rel='noopener noreferrer'
 					aria-label={`View ${file.name}`}
 				>
-					<Eye aria-hidden />
+					<Eye size={24} aria-hidden />
 				</a>
 
 				<a
@@ -43,7 +42,7 @@ export const FileItem = ({ file }: FileItemProps) => {
 					download
 					aria-label={`Download ${file.name}`}
 				>
-					<Download aria-hidden />
+					<Download size={24} aria-hidden />
 				</a>
 			</div>
 		</div>
