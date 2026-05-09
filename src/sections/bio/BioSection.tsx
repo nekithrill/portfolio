@@ -18,10 +18,8 @@ export function BioSection() {
 			<div className={styles['bio']}>
 				<div className={styles['bio__about']}>
 					<p>{t('sections.bio.about.pitch')}</p>
-					<Divider />
 					<p>{t('sections.bio.about.firstParagraph')}</p>
 					<p>{t('sections.bio.about.secondParagraph')}</p>
-					<Divider />
 					<p>{t('sections.bio.about.thirdParagraph')}</p>
 				</div>
 
