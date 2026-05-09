@@ -26,14 +26,23 @@
 	align-items: center;
 	gap: var(--sp-1);
 
+	&[data-status='open'] {
+		--status-color: var(--clr-success-500);
+	}
+	&[data-status='busy'] {
+		--status-color: var(--clr-error-500);
+	}
+
 	&__dot {
 		width: 0.5rem;
 		height: 0.5rem;
 		border-radius: var(--br-xs);
 		flex-shrink: 0;
+		background: var(--status-color);
 	}
 
 	&__label {
 		text-transform: uppercase;
+		color: var(--status-color);
 	}
 }
