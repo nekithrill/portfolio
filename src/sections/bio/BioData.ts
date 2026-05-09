@@ -1,4 +1,4 @@
-import cvFile from '@/shared/assets/cv.pdf'
+import cvFile from '/cv.pdf'
 
 export const bioData = {
 	cv: {
