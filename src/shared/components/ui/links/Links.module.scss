@@ -6,7 +6,7 @@
 	gap: var(--sp-2);
 
 	&__item {
-		color: var(--clr-text-secondary);
+		color: var(--clr-text);
 		transition: color var(--dur-normal) ease;
 
 		&:hover,
