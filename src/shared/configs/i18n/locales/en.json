@@ -14,10 +14,10 @@
 				"statusBusy": "Busy"
 			},
 			"about": {
-				"pitch": "Frontend developer building interfaces with React and TypeScript - clean, structured and pleasant to use.",
-				"firstParagraph": "I care about the engineering side of frontend: FSD architecture, scalable SCSS systems, thoughtful component design.",
-				"secondParagraph": "Additionally exploring backend development - not as a career pivot, but to understand the full lifecycle of a web application and make better decisions on the frontend.",
-				"thirdParagraph": "I am also interested in the creative potential of web development - PixiJS, Framer Motion, Anime.js. Engineering and visual craft is where I want to grow."
+				"pitch": "Frontend developer building interfaces with React and TypeScript. Clean, structured and pleasant to use.",
+				"firstParagraph": "I care about the engineering side of frontend. FSD architecture, scalable SCSS systems, thoughtful component design.",
+				"secondParagraph": "Additionally exploring backend development. Not as a career pivot, but to understand the full lifecycle of a web application and make better decisions on the frontend.",
+				"thirdParagraph": "Also interested in the creative side of the web. PixiJS for graphics, Framer Motion and Anime.js for animation."
 			},
 			"education": {
 				"firstPlace": "College of Economics and Law of Zaporizhzhia National University",
