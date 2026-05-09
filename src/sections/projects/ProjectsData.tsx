@@ -30,7 +30,7 @@ export const projectsData: Array<ProjectCardProps & { id: string }> = [
 			{ id: 'tag-scss', label: 'SCSS' }
 		],
 		description:
-			'Second project description goes here. Built with React and TypeScript.',
+			'A scalable CSS structure built with SCSS. Focused on BEM methodology, custom mixins, and theme variables to maintain a consistent visual style across complex layouts.',
 		demoUrl: '#',
 		repoUrl: 'https://github.com/nekithrill/scss-style-system'
 	}
