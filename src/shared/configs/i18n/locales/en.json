@@ -14,12 +14,12 @@
 				"statusBusy": "Busy"
 			},
 			"about": {
-				"title": "About",
-				"textFrontend": "I'm Mykyta, a Web-developer from Ukraine. I focus on building clean, responsive interfaces with React and TypeScript — code that's easy to maintain and pleasant to use.",
-				"textBackend": "Also interested in backend development in order to better understand web development from all sides."
+				"pitch": "Frontend developer building interfaces with React and TypeScript - clean, structured and pleasant to use.",
+				"firstParagraph": "I care about the engineering side of frontend: FSD architecture, scalable SCSS systems, thoughtful component design.",
+				"secondParagraph": "Additionally exploring backend development - not as a career pivot, but to understand the full lifecycle of a web application and make better decisions on the frontend.",
+				"thirdParagraph": "I am also interested in the creative potential of web development - PixiJS, Framer Motion, Anime.js. Engineering and visual craft is where I want to grow."
 			},
 			"education": {
-				"title": "Education",
 				"firstPlace": "College of Economics and Law of Zaporizhzhia National University",
 				"secondPlace": "Zaporizhzhia National University",
 				"specialty": "Software Engineering",
@@ -30,7 +30,6 @@
 		"skills": {
 			"title": "Skills",
 			"tech": {
-				"title": "Technical skills",
 				"programmingLanguages": "Programming languages",
 				"frontend": "Frontend",
 				"backend": "Backend",
