@@ -1,9 +1,10 @@
 .education-card {
+	padding: 0;
+
 	display: flex;
 	flex-direction: column;
 	gap: var(--sp-1);
 
-	padding: 0;
 	border: 0;
 
 	&__years,
@@ -14,15 +15,17 @@
 		gap: var(--sp-2);
 
 		svg {
-			flex-shrink: 0;
 			width: 1.5rem;
 			height: 1.5rem;
+
+			flex-shrink: 0;
 		}
 	}
 
 	&__degree {
 		color: var(--clr-text-secondary);
 	}
+
 	&__institution {
 		color: var(--clr-text-tertiary);
 	}

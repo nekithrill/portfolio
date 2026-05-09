@@ -2,15 +2,19 @@
 	display: none;
 
 	@media (pointer: fine) {
+		padding: 0 5px;
+
 		display: inline-block;
+		align-self: center;
+
+		border: var(--bw-thin) solid var(--clr-text);
+		border-radius: var(--br-sm);
+		color: var(--clr-text);
+		box-shadow: 0 2px 0 0 var(--clr-text);
+
 		font-family: var(--ff-mono);
 		font-size: 11px;
-		padding: 0 5px;
-		border-radius: var(--br-sm);
-		border: var(--bw-thin) solid var(--clr-text);
-		color: var(--clr-text);
-		align-self: center;
+
 		pointer-events: none;
-		box-shadow: 0 2px 0 0 var(--clr-text);
 	}
 }

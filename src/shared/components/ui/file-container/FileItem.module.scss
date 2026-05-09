@@ -1,6 +1,8 @@
 .file-item {
+	padding: var(--sp-1) 0;
+
 	display: grid;
-	// Колонки: иконка, название/мета, кнопки
+	align-items: center;
 	grid-template-columns: auto 1fr auto;
 	grid-template-rows: auto auto;
 	grid-template-areas:
@@ -8,19 +10,21 @@
 		'meta meta actions';
 
 	column-gap: var(--sp-1);
-	align-items: center;
-	padding: var(--sp-1) 0;
 
 	&__icon {
-		grid-area: icon;
 		flex-shrink: 0;
+		grid-area: icon;
+
 		color: var(--clr-text-accent);
 	}
 
 	&__name {
-		grid-area: name;
 		overflow: hidden;
+
+		grid-area: name;
+
 		color: var(--clr-text-accent);
+
 		font-family: var(--ff-accent);
 		font-size: var(--fs-h3);
 		font-weight: var(--fw-medium);
@@ -30,7 +34,9 @@
 
 	&__meta {
 		grid-area: meta;
+
 		color: var(--clr-text-tertiary);
+
 		font-family: var(--ff-primary);
 		font-size: 0.85rem;
 
@@ -43,19 +49,22 @@
 	}
 
 	&__actions {
-		grid-area: actions;
 		display: flex;
 		flex-shrink: 0;
+		grid-area: actions;
 		gap: var(--sp-2);
 	}
 
 	&__button {
 		padding: var(--sp-1);
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		border: none;
 		color: var(--clr-text-accent);
+
 		transition: color var(--dur-normal) ease;
 
 		&:hover,

@@ -1,5 +1,6 @@
 .bio {
 	display: grid;
+	align-items: start;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto 1fr;
 	grid-template-areas:
@@ -7,34 +8,35 @@
 		'about education';
 
 	gap: var(--sp-4);
-	align-items: start;
 
 	&__about {
-		grid-area: about;
-
 		display: flex;
 		flex-direction: column;
+		grid-area: about;
 		gap: var(--sp-4);
 
 		p:first-of-type {
+			color: var(--clr-text-primary);
+
 			font-size: var(--fs-h4);
 			font-weight: var(--fw-medium);
-			color: var(--clr-text-primary);
 			line-height: var(--lh-normal);
 		}
 
 		p:nth-of-type(2),
 		p:nth-of-type(3) {
+			color: var(--clr-text-secondary);
+
 			font-size: var(--fs-h6);
 			font-weight: var(--fw-regular);
-			color: var(--clr-text-secondary);
 			line-height: var(--lh-loose);
 		}
 
 		p:last-of-type {
+			color: var(--clr-text-tertiary);
+
 			font-size: 0.8rem;
 			font-weight: var(--fw-regular);
-			color: var(--clr-text-tertiary);
 			line-height: var(--lh-loose);
 		}
 	}
@@ -44,9 +46,9 @@
 	}
 
 	&__education {
-		grid-area: education;
 		display: flex;
 		flex-direction: column;
+		grid-area: education;
 		gap: var(--sp-4);
 	}
 

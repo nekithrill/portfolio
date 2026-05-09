@@ -7,14 +7,15 @@
 	border-radius: var(--br-md);
 	background-color: var(--clr-chip-bg);
 
-	font-weight: var(--fw-medium);
 	font-size: var(--fs-chip);
+
+	font-weight: var(--fw-medium);
 
 	user-select: none;
 
 	&--dashed {
-		background-color: transparent;
 		border: var(--bw-thin) dashed var(--clr-border);
+		background-color: transparent;
 		color: var(--clr-text-tertiary);
 	}
 }

@@ -1,8 +1,8 @@
 .app {
 	--app-spacing: var(--sp-8);
+	width: 100%;
 
 	max-width: 75rem;
-	width: 100%;
 	padding: var(--app-spacing) 0;
 
 	display: flex;
@@ -14,6 +14,7 @@
 
 	@include breakpoint('xl') {
 		max-width: 62rem;
+
 		gap: var(--sp-6);
 	}
 

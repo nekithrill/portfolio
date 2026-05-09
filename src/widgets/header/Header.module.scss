@@ -1,7 +1,7 @@
 .header {
-	width: 100%;
-
 	position: relative;
+
+	width: 100%;
 
 	display: flex;
 	gap: var(--sp-1);
@@ -12,8 +12,9 @@
 
 	&__role {
 		color: var(--clr-text-accent);
-		text-transform: uppercase;
+
 		letter-spacing: var(--ls-wide);
+		text-transform: uppercase;
 	}
 
 	&__location {
@@ -29,6 +30,7 @@
 	&[data-status='open'] {
 		--status-color: var(--clr-success-500);
 	}
+
 	&[data-status='busy'] {
 		--status-color: var(--clr-error-500);
 	}
@@ -36,13 +38,16 @@
 	&__dot {
 		width: 0.5rem;
 		height: 0.5rem;
-		border-radius: var(--br-xs);
+
 		flex-shrink: 0;
+
+		border-radius: var(--br-xs);
 		background: var(--status-color);
 	}
 
 	&__label {
-		text-transform: uppercase;
 		color: var(--status-color);
+
+		text-transform: uppercase;
 	}
 }
