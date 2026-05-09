@@ -55,9 +55,9 @@ export const skillsData: SkillSection[] = [
 		id: 'exploring',
 		title: 'Currently Exploring',
 		items: [
-			{ label: 'Learning', value: 'WebSockets / Realtime' },
-			{ label: 'Interest', value: 'Microservices' },
-			{ label: 'Next', value: 'Advanced NestJS patterns' }
+			{ label: 'Learning', value: 'Advanced React / TS' },
+			{ label: 'Interest', value: 'PixiJS / Elixir' },
+			{ label: 'Next', value: '...' }
 		]
 	}
 ]
