@@ -1,13 +1,13 @@
-import { Divider } from '@/shared/components/ui/divider'
-import { Controls } from '@/widgets/controls'
-import { Footer } from '@/widgets/footer'
-import { Header } from '@/widgets/header'
-import { Navbar } from '@/widgets/navbar'
 import { Menu, X } from 'lucide-react'
+import type { ReactNode } from 'react'
 import { useEffect, useState } from 'react'
 import styles from './Sidebar.module.scss'
 
-export const Sidebar = () => {
+interface SidebarProps {
+	children: ReactNode
+}
+
+export const Sidebar = ({ children }: SidebarProps) => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	useEffect(() => {
@@ -41,13 +41,7 @@ export const Sidebar = () => {
 			<aside
 				className={`${styles['sidebar']} ${isOpen ? styles['sidebar--open'] : ''}`}
 			>
-				<Header />
-				<Divider />
-				<Navbar />
-				<Divider />
-				<Controls />
-				<Divider />
-				<Footer />
+				{children}
 			</aside>
 		</>
 	)
