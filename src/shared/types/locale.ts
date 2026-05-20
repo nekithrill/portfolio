@@ -7,9 +7,3 @@ export const LANGUAGES = {
 } as const
 
 export type Language = (typeof LANGUAGES)[keyof typeof LANGUAGES]['value']
-
-export interface LanguageSwitchResult {
-	language: Language
-	setLanguage: (lang: Language) => void
-	toggleLanguage: () => void
-}

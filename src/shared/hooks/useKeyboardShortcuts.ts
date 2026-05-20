@@ -1,4 +1,5 @@
-// keyboard/useKeyboardShortcuts.ts
+import { useLanguageStore } from '@/shared/store/languageStore'
+import { useThemeStore } from '@/shared/store/themeStore'
 import { useEffect } from 'react'
 
 const KEYMAP: Record<string, string> = {
@@ -15,15 +16,10 @@ const SECTIONS: Record<string, string> = {
 	'3': '#projects'
 }
 
-interface Shortcuts {
-	toggleTheme: () => void
-	toggleLanguage: () => void
-}
+export const useKeyboardShortcuts = () => {
+	const toggleTheme = useThemeStore(state => state.toggleTheme)
+	const toggleLanguage = useLanguageStore(state => state.toggleLanguage)
 
-export const useKeyboardShortcuts = ({
-	toggleTheme,
-	toggleLanguage
-}: Shortcuts) => {
 	useEffect(() => {
 		const handler = (e: KeyboardEvent) => {
 			if (
