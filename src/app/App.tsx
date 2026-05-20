@@ -1,14 +1,32 @@
-import { RootLayout } from '@/app/layouts/RootLayout'
-import { BioSection } from '@/sections/bio/BioSection'
-import { ProjectsSection } from '@/sections/projects/ProjectsSection'
-import { SkillsSection } from '@/sections/skills/SkillsSection'
+import { HomePage } from '@/pages/home'
+import { Content } from '@/shared/components/ui/content'
+import { Divider } from '@/shared/components/ui/divider'
+import { useKeyboardShortcuts } from '@/shared/hooks/useKeyboardShortcuts'
+import { Controls } from '@/widgets/controls'
+import { Footer } from '@/widgets/footer'
+import { Header } from '@/widgets/header'
+import { Navbar } from '@/widgets/navbar'
+import { Sidebar } from '@/widgets/sidebar'
+import styles from './App.module.scss'
 
 export default function App() {
+	useKeyboardShortcuts()
+
 	return (
-		<RootLayout>
-			<BioSection />
-			<SkillsSection />
-			<ProjectsSection />
-		</RootLayout>
+		<div className={styles['app']}>
+			<Sidebar>
+				<Header />
+				<Divider />
+				<Navbar />
+				<Divider />
+				<Controls />
+				<Divider />
+				<Footer />
+			</Sidebar>
+
+			<Content>
+				<HomePage />
+			</Content>
+		</div>
 	)
 }
