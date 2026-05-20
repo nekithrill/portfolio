@@ -1,6 +1,6 @@
-import { useTheme } from '@/app/providers/theme'
 import { Kbd } from '@/shared/components/ui/kbd'
 import { Switch } from '@/shared/components/ui/switch'
+import { useThemeStore } from '@/shared/store/themeStore'
 import type { Theme } from '@/shared/types/theme'
 import { Monitor, Moon, Sun } from 'lucide-react'
 import styles from './ThemeSwitch.module.scss'
@@ -24,7 +24,7 @@ const options = [
 ]
 
 export const ThemeSwitch = () => {
-	const { theme, setTheme } = useTheme()
+	const { theme, setTheme } = useThemeStore()
 
 	return (
 		<div className={styles['theme-switch']}>
