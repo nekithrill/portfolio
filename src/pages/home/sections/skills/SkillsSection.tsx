@@ -1,4 +1,4 @@
-import { skillsData } from '@/sections/skills/SkillsData'
+import { skillsData } from '@/pages/home/sections/skills/SkillsData'
 import { Card } from '@/shared/components/ui/card'
 import { Section } from '@/shared/components/ui/section'
 import { useTranslation } from 'react-i18next'

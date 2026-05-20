@@ -1,12 +1,12 @@
-import { bioData } from '@/sections/bio/BioData'
+import { bioData } from '@/pages/home/sections/bio/BioData'
 import { Card } from '@/shared/components/ui/card'
 import { Divider } from '@/shared/components/ui/divider'
 import { FileItem } from '@/shared/components/ui/file-container'
 import { Section } from '@/shared/components/ui/section'
+import { Fragment } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Fragment } from 'react/jsx-runtime'
 import styles from './BioSection.module.scss'
-import { EducationCard } from './components/education-card'
+import { BioCard } from './components/bio-card'
 
 export function BioSection() {
 	const { t } = useTranslation()
@@ -39,7 +39,7 @@ export function BioSection() {
 						<Fragment key={item.years}>
 							{index > 0 && <Divider />}
 
-							<EducationCard
+							<BioCard
 								years={item.years}
 								degree={
 									item.degree ? t(`sections.bio.education.${item.degree}`) : ''

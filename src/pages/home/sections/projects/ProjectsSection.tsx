@@ -1,4 +1,4 @@
-import { projectsData } from '@/sections/projects/ProjectsData'
+import { projectsData } from '@/pages/home/sections/projects/ProjectsData'
 import { Section } from '@/shared/components/ui/section'
 import { useTranslation } from 'react-i18next'
 import { ProjectCard } from './components/project-card'

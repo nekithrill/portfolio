@@ -1,4 +1,4 @@
-import type { ProjectCardProps } from '@/sections/projects/components/project-card'
+import type { ProjectCardProps } from '@/pages/home/sections/projects/components/project-card'
 import portfolioImg from '@/shared/assets/images/portfolio.png'
 
 export const projectsData: Array<ProjectCardProps & { id: string }> = [
