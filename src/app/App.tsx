@@ -9,7 +9,7 @@ import { Navbar } from '@/widgets/navbar'
 import { Sidebar } from '@/widgets/sidebar'
 import styles from './App.module.scss'
 
-export default function App() {
+export const App = () => {
 	useKeyboardShortcuts()
 
 	return (

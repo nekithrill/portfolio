@@ -1,6 +1,6 @@
-import App from '@/app/App'
+import { App } from '@/app/App'
 import '@/app/styles/main.scss'
-import '@/shared/configs/i18n/config'
+import '@/shared/config/i18n'
 import '@/shared/store/languageStore'
 import '@/shared/store/themeStore'
 import { StrictMode } from 'react'
