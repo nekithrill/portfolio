@@ -32,10 +32,8 @@
 		/* Paths */
 		"paths": {
 			"@/*": ["./src/*"]
-		},
-		"outDir": "dist"
+		}
 	},
 	"include": ["src", "vite-env.d.ts"],
-	"exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
